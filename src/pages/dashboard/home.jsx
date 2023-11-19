@@ -24,7 +24,7 @@ import {
   statisticsChartsData,
   projectsTableData,
   ordersOverviewData,
-} from "@/data";
+} from "@/dataDummy";
 import { CheckCircleIcon, ClockIcon } from "@heroicons/react/24/solid";
 
 export function Home() {

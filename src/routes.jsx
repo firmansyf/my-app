@@ -1,6 +1,10 @@
 import {
   HomeIcon,
   TableCellsIcon,
+  ChartBarIcon,
+  LinkIcon,
+  CodeBracketIcon,
+  InformationCircleIcon
 } from "@heroicons/react/24/solid";
 import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
 
@@ -20,17 +24,29 @@ export const routes = [
       },
      
       {
-        icon: <TableCellsIcon {...icon} />,
-        name: "member",
+        icon: <ChartBarIcon {...icon} />,
+        name: "analyst",
         path: "/tables",
         element: <Tables />,
       },
-      // {
-      //   icon: <InformationCircleIcon {...icon} />,
-      //   name: "notifications",
-      //   path: "/notifications",
-      //   element: <Notifications />,
-      // },
+      {
+        icon: <LinkIcon {...icon} />,
+        name: "blog",
+        path: "/blog",
+        element: <Notifications />,
+      },
+      {
+        icon: <CodeBracketIcon {...icon} />,
+        name: "project",
+        path: "/project",
+        element: <Notifications />,
+      },
+      {
+        icon: <InformationCircleIcon {...icon} />,
+        name: "about",
+        path: "/about",
+        element: <Notifications />,
+      },
     ],
   },
 

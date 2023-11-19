@@ -146,32 +146,7 @@ export function Configurator() {
             />
           </div>
           <hr />
-          <div className="my-8 flex flex-col gap-4">
-            <a
-              href="https://www.creative-tim.com/product/material-tailwind-dashboard-react?rel=mtdr"
-              target="_black"
-            >
-              <Button variant="gradient" fullWidth>
-                Free Download
-              </Button>
-            </a>
-            <a
-              href="https://www.material-tailwind.com/docs/react/installation?rel=mtdr"
-              target="_black"
-            >
-              <Button variant="outlined" color="blue-gray" fullWidth>
-                View Documentation
-              </Button>
-            </a>
-            <a
-              href="https://www.material-tailwind.com/blocks/react?rel=mtdr"
-              target="_black"
-            >
-              <Button variant="outlined" color="blue-gray" fullWidth>
-                Material Tailwind PRO
-              </Button>
-            </a>
-          </div>
+         
           <a
             className="mx-auto flex items-center justify-center gap-2"
             href="https://github.com/creativetimofficial/material-tailwind-dashboard-react"

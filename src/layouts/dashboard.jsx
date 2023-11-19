@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Cog6ToothIcon } from "@heroicons/react/24/solid";
+import { Cog6ToothIcon, PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import { IconButton } from "@material-tailwind/react";
 import {
   Sidenav,
@@ -27,12 +27,12 @@ export function Dashboard() {
         <Configurator />
         <IconButton
           size="lg"
-          color="white"
+          color="light-blue"
           className="fixed bottom-8 right-8 z-40 rounded-full shadow-blue-gray-900/10"
           ripple={false}
           onClick={() => setOpenConfigurator(dispatch, true)}
         >
-          <Cog6ToothIcon className="h-5 w-5" />
+          <PaperAirplaneIcon className="h-5 w-5" />
         </IconButton>
         <Routes>
           {routes.map(

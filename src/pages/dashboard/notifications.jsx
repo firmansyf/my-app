@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   Typography,
   Alert,
@@ -9,13 +9,13 @@ import {
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
 
 export function Notifications() {
-  const [showAlerts, setShowAlerts] = React.useState({
+  const [showAlerts, setShowAlerts] = useState({
     blue: true,
     green: true,
     orange: true,
     red: true,
   });
-  const [showAlertsWithIcon, setShowAlertsWithIcon] = React.useState({
+  const [showAlertsWithIcon, setShowAlertsWithIcon] = useState({
     blue: true,
     green: true,
     orange: true,

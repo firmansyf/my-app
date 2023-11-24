@@ -1,0 +1,134 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true
+  },
+  "extends": [
+    // "react-app",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    // "prettier"
+    "./sonar-rules.jsonc"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    // "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier",
+    "simple-import-sort",
+    "unused-imports"
+  ],
+  "rules": {
+    "max-lines": [
+      "off",
+      {
+        "max": 500,
+        "skipBlankLines": false,
+        "skipComments": false
+      }
+    ],
+
+    "no-unreachable": "error",
+    "no-unreachable-loop": "error",
+    "no-unused-vars": "off",
+    "no-empty-pattern": "error",
+    "no-empty-function": "off",
+    "no-unsafe-optional-chaining": "off",
+    "prefer-arrow-callback": [
+      "warn",
+      {
+        "allowNamedFunctions": false
+      }
+    ],
+    "no-duplicate-imports": "error",
+    "no-console": "warn",
+    "eqeqeq": "error",
+    "prettier/prettier": "error",
+    "array-callback-return": "warn",
+
+    // "jsx-a11y/anchor-is-valid": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "off",
+    "react/display-name": "off",
+    "react/no-unescaped-entities": "off",
+    "react/no-unknown-property": "warn",
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unstable-nested-components": [
+      "off",
+      {
+        "allowAsProps": false
+      }
+    ],
+    "react/jsx-key": [
+      "warn",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": true,
+        "warnOnDuplicates": true
+      }
+    ],
+    "react/jsx-no-useless-fragment": [
+      "warn",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "react/jsx-no-script-url": [
+      "warn",
+      [
+        {
+          "name": "Link",
+          "props": ["to"]
+        },
+        {
+          "name": "a",
+          "props": ["href"]
+        }
+      ]
+    ],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "@typescript-eslint/prefer-optional-chain": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "process": true,
+    "google": "readonly"
+  }
+}

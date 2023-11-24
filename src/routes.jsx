@@ -4,52 +4,51 @@ import {
   ChartBarIcon,
   LinkIcon,
   CodeBracketIcon,
-  InformationCircleIcon
-} from "@heroicons/react/24/solid";
-import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
+  InformationCircleIcon,
+} from '@heroicons/react/24/solid'
+import {Home, Profile, Tables, Notifications} from '@/pages/dashboard'
 
 const icon = {
-  className: "w-5 h-5 text-inherit",
-};
+  className: 'w-5 h-5 text-inherit',
+}
 
 export const routes = [
   {
-    layout: "dashboard",
+    layout: 'dashboard',
     pages: [
       {
         icon: <HomeIcon {...icon} />,
-        name: "dashboard",
-        path: "/home",
+        name: 'dashboard',
+        path: '/home',
         element: <Home />,
       },
-     
+
       {
         icon: <ChartBarIcon {...icon} />,
-        name: "analyst",
-        path: "/tables",
+        name: 'analyst',
+        path: '/tables',
         element: <Tables />,
       },
       {
         icon: <LinkIcon {...icon} />,
-        name: "blog",
-        path: "/blog",
+        name: 'blog',
+        path: '/blog',
         element: <Notifications />,
       },
       {
         icon: <CodeBracketIcon {...icon} />,
-        name: "project",
-        path: "/project",
+        name: 'project',
+        path: '/project',
         element: <Notifications />,
       },
       {
         icon: <InformationCircleIcon {...icon} />,
-        name: "about",
-        path: "/about",
+        name: 'about',
+        path: '/about',
         element: <Notifications />,
       },
     ],
   },
-
 
   // {
   //   title: "auth pages",
@@ -69,6 +68,6 @@ export const routes = [
   //     },
   //   ],
   // },
-];
+]
 
-export default routes;
+export default routes

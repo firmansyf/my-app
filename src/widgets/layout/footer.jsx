@@ -1,26 +1,25 @@
-import PropTypes from "prop-types";
-import { Typography } from "@material-tailwind/react";
-import { HeartIcon } from "@heroicons/react/24/solid";
+import PropTypes from 'prop-types'
+import {Typography} from '@material-tailwind/react'
+import {HeartIcon} from '@heroicons/react/24/solid'
 
-export function Footer({ brandName, brandLink, routes }) {
-  const year = new Date().getFullYear();
+export function Footer({brandName, brandLink, routes}) {
+  const year = new Date().getFullYear()
 
   return (
-    <footer className="py-2">
-      <div className="flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between">
-        <Typography variant="small" className="font-normal text-inherit">
+    <footer className='py-2'>
+      <div className='flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between'>
+        <Typography variant='small' className='font-normal text-inherit'>
           &copy; {year} yusuf Firmansyah
-        
         </Typography>
-        <ul className="flex items-center gap-4">
-          {routes.map(({ name, path }) => (
+        <ul className='flex items-center gap-4'>
+          {routes.map(({name, path}) => (
             <li key={name}>
               <Typography
-                as="a"
+                as='a'
                 href={path}
-                target="_blank"
-                variant="small"
-                className="py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500"
+                target='_blank'
+                variant='small'
+                className='py-0.5 px-1 font-normal text-inherit transition-colors hover:text-blue-500'
               >
                 {name}
               </Typography>
@@ -29,25 +28,25 @@ export function Footer({ brandName, brandLink, routes }) {
         </ul>
       </div>
     </footer>
-  );
+  )
 }
 
 Footer.defaultProps = {
-  brandName: "Creative Tim",
-  brandLink: "https://www.creative-tim.com",
+  brandName: 'Creative Tim',
+  brandLink: 'https://www.creative-tim.com',
   routes: [
-    { name: "Github", path: "https://github.com/firmansyf" },
-    { name: "Facebook", path: "https://www.facebook.com" },
-    { name: "Linkedin", path: "https://www.linkedin.com/in/yusuf-firmansyah/" },
+    {name: 'Github', path: 'https://github.com/firmansyf'},
+    {name: 'Facebook', path: 'https://www.facebook.com'},
+    {name: 'Linkedin', path: 'https://www.linkedin.com/in/yusuf-firmansyah/'},
   ],
-};
+}
 
 Footer.propTypes = {
   brandName: PropTypes.string,
   brandLink: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object),
-};
+}
 
-Footer.displayName = "/src/widgets/layout/footer.jsx";
+Footer.displayName = '/src/widgets/layout/footer.jsx'
 
-export default Footer;
+export default Footer

@@ -1,9 +1,9 @@
-import {Routes, Route} from 'react-router-dom'
-import {PaperAirplaneIcon} from '@heroicons/react/24/solid'
-import {IconButton, Button} from '@material-tailwind/react'
-import {Sidenav, DashboardNavbar, Configurator, Footer} from '@/widgets/layout'
+import {useMaterialTailwindController} from '@/context'
 import routes from '@/routes'
-import {useMaterialTailwindController, setOpenConfigurator} from '@/context'
+import {Configurator, DashboardNavbar, Footer, Sidenav} from '@/widgets/layout'
+import {PaperAirplaneIcon} from '@heroicons/react/24/solid'
+import {IconButton} from '@material-tailwind/react'
+import {Route, Routes} from 'react-router-dom'
 
 export function Dashboard() {
   const [controller, dispatch] = useMaterialTailwindController()

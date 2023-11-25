@@ -1,12 +1,11 @@
+import {Home, Notifications, Tables} from '@/pages/dashboard'
 import {
-  HomeIcon,
-  TableCellsIcon,
   ChartBarIcon,
-  LinkIcon,
   CodeBracketIcon,
+  HomeIcon,
   InformationCircleIcon,
+  LinkIcon,
 } from '@heroicons/react/24/solid'
-import {Home, Profile, Tables, Notifications} from '@/pages/dashboard'
 
 const icon = {
   className: 'w-5 h-5 text-inherit',

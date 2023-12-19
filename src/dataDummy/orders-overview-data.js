@@ -1,49 +1,39 @@
 import {
-  BellIcon,
-  PlusCircleIcon,
   ShoppingCartIcon,
   CreditCardIcon,
   LockOpenIcon,
   BanknotesIcon,
-} from "@heroicons/react/24/solid";
+} from '@heroicons/react/24/solid'
 
 export const ordersOverviewData = [
   {
-    icon: BellIcon,
-    color: "text-blue-gray-300",
-    title: "$2400, Design changes",
-    description: "22 DEC 7:20 PM",
+    icon: '/img-office/cudo.jpg',
+    color: 'text-blue-gray-300',
+    title: 'PT Cudo Communication',
+    position: 'Frontend Developer',
+    description: 'Sep 2023 - Des 2023',
   },
   {
-    icon: PlusCircleIcon,
-    color: "text-blue-gray-300",
-    title: "New order #1832412",
-    description: "21 DEC 11 PM",
+    icon: '/img-office/assetData.jpg',
+    color: 'text-blue-gray-300',
+    title: 'AssetData.io',
+    position: 'Frontend Developer - Part Time',
+    description: 'Sep 2023 - Des 2023',
   },
   {
-    icon: ShoppingCartIcon,
-    color: "text-blue-gray-300",
-    title: "Server payments for April",
-    description: "21 DEC 9:34 PM",
+    icon: '/img-office/assetData.jpg',
+    color: 'text-blue-gray-300',
+    title: 'AssetData.io',
+    position: 'Frontend Developer - Full Time',
+    description: 'Sep 2021 - Sep 2023',
   },
   {
-    icon: CreditCardIcon,
-    color: "text-blue-gray-300",
-    title: "New card added for order #4395133",
-    description: "20 DEC 2:20 AM",
+    icon: '/img-office/empty-company.png',
+    color: 'text-blue-gray-300',
+    title: 'PT. Systema Precission',
+    position: 'CNC Operator',
+    description: 'Dec 2020  - May 2021',
   },
-  {
-    icon: LockOpenIcon,
-    color: "text-blue-gray-300",
-    title: "Unlock packages for development",
-    description: "18 DEC 4:54 AM",
-  },
-  {
-    icon: BanknotesIcon,
-    color: "text-blue-gray-300",
-    title: "New order #9583120",
-    description: "17 DEC",
-  },
-];
+]
 
-export default ordersOverviewData;
+export default ordersOverviewData

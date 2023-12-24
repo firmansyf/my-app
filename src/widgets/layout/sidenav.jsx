@@ -1,10 +1,11 @@
+import Ping from '@/components/ping'
 import {setOpenSidenav, useMaterialTailwindController} from '@/context'
 import {XMarkIcon} from '@heroicons/react/24/outline'
-import {Button, IconButton, Typography} from '@material-tailwind/react'
+import {Button, IconButton, Typography, Chip} from '@material-tailwind/react'
 import PropTypes from 'prop-types'
-import {Link, NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
-export function Sidenav({brandImg, brandName, routes}) {
+export function Sidenav({brandImg, isName, routes}) {
   const [controller, dispatch] = useMaterialTailwindController()
   const {sidenavColor, sidenavType, openSidenav} = controller
   const sidenavTypes = {
@@ -20,11 +21,22 @@ export function Sidenav({brandImg, brandName, routes}) {
       } fixed inset-0 z-50 my-4 ml-4 h-[calc(100vh-32px)] w-72 rounded-xl transition-transform duration-300 xl:translate-x-0 border border-blue-gray-100`}
     >
       <div className={`relative`}>
-        <Link to='/' className='py-6 px-8 text-center'>
-          <Typography variant='h6' color={sidenavType === 'dark' ? 'white' : 'blue-gray'}>
-            {brandName}
-          </Typography>
-        </Link>
+        <section className='py-6 px-8 text-center flex justify-start items-center gap-5'>
+          <img src='/img/team-2.jpeg' className='w-16 rounded-full shadow-xl' />
+          <section className='flex flex-col'>
+            <Typography variant='h6' color={sidenavType === 'dark' ? 'white' : 'blue-gray'}>
+              {isName}
+            </Typography>
+            <div className='border border-green-400 rounded-full p-0.5'>
+              <Ping Bgcolor={'bg-green-500'}>
+                <p className='text-xs text-green-500 font-bold p-1 rounded-full'>
+                  Available for hire
+                </p>
+              </Ping>
+            </div>
+          </section>
+        </section>
+
         <IconButton
           variant='text'
           color='white'
@@ -81,12 +93,12 @@ export function Sidenav({brandImg, brandName, routes}) {
 
 Sidenav.defaultProps = {
   brandImg: '/img/logo-ct.png',
-  brandName: 'Yusuf Firmansyah',
+  isName: 'Yusuf F.',
 }
 
 Sidenav.propTypes = {
   brandImg: PropTypes.string,
-  brandName: PropTypes.string,
+  isName: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 

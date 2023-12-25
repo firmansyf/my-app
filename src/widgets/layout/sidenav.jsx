@@ -22,7 +22,7 @@ export function Sidenav({brandImg, isName, routes}) {
     >
       <div className={`relative`}>
         <section className='py-6 px-8 text-center flex justify-start items-center gap-5'>
-          <img src='/img/team-2.jpeg' className='w-16 rounded-full shadow-xl' />
+          <img src='/img-office/yusuf.jpg' className='w-16 rounded-full shadow-lg border-2' />
           <section className='flex flex-col'>
             <Typography variant='h6' color={sidenavType === 'dark' ? 'white' : 'blue-gray'}>
               {isName}

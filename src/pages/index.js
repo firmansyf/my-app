@@ -1,0 +1,6 @@
+export * from '@/pages/dashboard/home'
+export * from '@/pages/dashboard/profile'
+export * from '@/pages/analyst/analyst'
+export * from '@/pages/blog/blog'
+export * from '@/pages/project/project'
+export * from '@/pages/about/about'

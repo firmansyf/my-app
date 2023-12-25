@@ -1,5 +1,4 @@
-import {Home, Notifications, Tables} from '@/pages/dashboard'
-import About from '@/pages/about'
+import {Home, Blog, Analyst, Project, About} from '@/pages'
 import {
   ChartBarIcon,
   CodeBracketIcon,
@@ -27,19 +26,19 @@ export const routes = [
         icon: <ChartBarIcon {...icon} />,
         name: 'analyst',
         path: '/analyst',
-        element: <Tables />,
+        element: <Analyst />,
       },
       {
         icon: <LinkIcon {...icon} />,
         name: 'blog',
         path: '/blog',
-        element: <Notifications />,
+        element: <Blog />,
       },
       {
         icon: <CodeBracketIcon {...icon} />,
         name: 'project',
         path: '/project',
-        element: <Notifications />,
+        element: <Project />,
       },
       {
         icon: <InformationCircleIcon {...icon} />,

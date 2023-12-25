@@ -26,7 +26,7 @@ export const routes = [
       {
         icon: <ChartBarIcon {...icon} />,
         name: 'analyst',
-        path: '/tables',
+        path: '/analyst',
         element: <Tables />,
       },
       {

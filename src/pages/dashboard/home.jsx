@@ -16,11 +16,11 @@ export function Home() {
         <Card className='shadow-sm border border-blue-gray-100'>
           <CardBody className='w-2/3'>
             <div className='mb-3'>
-              <Typography variant='h4'>Hi, i'am Yusuf Firmansyah</Typography>
+              <Typography variant='h4'>Hi, {"i'am Yusuf Firmansyah"}</Typography>
             </div>
             <Typography variant='paragraph' className='tracking-wide font-normal'>
               I am an experienced frontend developer with a focus on attractive and interactive user
-              interface pages. I'm dedicated to creating web applications that stand out, are
+              interface pages. {"I'm"} dedicated to creating web applications that stand out, are
               responsive, and are reliable.
             </Typography>
           </CardBody>
@@ -39,41 +39,47 @@ export function Home() {
               <Typography variant='h6' color='blue-gray' className=''>
                 Articles
               </Typography>
-              <span className=''>These are some of the articles I'm worked</span>
+              <span className=''>These are some of the articles {"I'm worked"}</span>
             </div>
           </CardHeader>
           <CardBody className='overflow-x-auto p-5'>
-            {articlesData?.map((item, i) => (
-              <article className='my-3'>
-                <Card
-                  className='p-3 border border-blue-gray-50 shadow-sm cursor-pointer relative hover:bg-blue-gray-50 transition-all'
-                  onClick={() => handleOnClick(item.path)}
-                >
-                  <div className='flex gap-5 items-center'>
-                    <img src={item.img} className='w-24 h-24 rounded-lg shadow-md' />
+            {articlesData?.map((item, i) => {
+              const {tag} = item
+              return (
+                <article className='my-3' key={i}>
+                  <Card
+                    className='p-3 border border-blue-gray-50 shadow-sm cursor-pointer relative hover:bg-blue-gray-50 transition-all'
+                    onClick={() => handleOnClick(item.path)}
+                  >
+                    <div className='flex gap-5 items-center'>
+                      <img src={item.img} className='w-24 h-24 rounded-lg shadow-md' />
 
-                    <div className='mt-2 w-full'>
-                      <Typography variant='h5'>{item.title}</Typography>
-                      <p className='text-md tracking-wide w-full'>{item?.description}</p>
+                      <div className='mt-2 w-full'>
+                        <Typography variant='h5'>{item.title}</Typography>
+                        <p className='text-md tracking-wide w-full'>{item?.description}</p>
 
-                      <section className='flex gap-1 mt-2 items-center'>
-                        <span
-                          className='text-xs p-1 rounded-xl shadow-sm'
-                          style={{backgroundColor: '#EEE'}}
-                        >
-                          {item.tag}
-                        </span>
-                        <span className='text-xs p-1 rounded-xl flex items-center'>
-                          <ClockIcon className='w-4 mx-1' />
-                          {item.duration}
-                        </span>
-                        <span className='text-xs'>{item.date}</span>
-                      </section>
+                        <section className='flex gap-1 mt-2 items-center'>
+                          {tag.map((dt, i) => (
+                            <span
+                              key={i}
+                              className='text-xs p-1 rounded-xl shadow-sm'
+                              style={{backgroundColor: '#EEE'}}
+                            >
+                              {dt}
+                            </span>
+                          ))}
+                          <span className='text-xs p-1 rounded-xl flex items-center'>
+                            <ClockIcon className='w-4 mx-1' />
+                            {item.duration}
+                          </span>
+                          <span className='text-xs'>{item.date}</span>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                </Card>
-              </article>
-            ))}
+                  </Card>
+                </article>
+              )
+            })}
           </CardBody>
           <CardFooter className=''>
             <Button

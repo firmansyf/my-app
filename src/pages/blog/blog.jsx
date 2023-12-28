@@ -9,7 +9,7 @@ export function Blog() {
 
   return (
     <div className='my-10 w-full flex max-w-screen-lg flex-col'>
-      <Card>
+      <Card className='w-full'>
         <CardBody>
           <Typography>Latest post</Typography>
           {articlesData?.map((item, i) => {

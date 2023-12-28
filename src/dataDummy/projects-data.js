@@ -1,60 +1,55 @@
 export const projectsData = [
   {
-    img: "/img/home-decor-1.jpeg",
-    title: "Modern",
-    tag: "Project #1",
+    img: '/img/assetdata_img.png',
+    title: 'AssetData platform - AssetData.io',
+    info: 'Maintenance and Management Asset',
+    tag: 'frontend development',
     description:
-      "As Uber works through a huge amount of internal management turmoil.",
-    route: "/dashboard/profile",
-    members: [
-      { img: "/img/team-1.jpeg", name: "Romina Hadid" },
-      { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
-      { img: "/img/team-3.jpeg", name: "Jessica Doe" },
-      { img: "/img/team-4.jpeg", name: "Alexander Smith" },
+      'AssetData.io is one of the fastest-growing SaaS asset management and maintenance platforms available.',
+    route: '/dashboard/profile',
+    stack: [{name: 'React Typescript'}, {name: 'Cypress'}, {name: 'Javascript'}],
+    tools: [
+      {name: 'Slack'},
+      {name: 'Bitbucket'},
+      {name: 'Sentry'},
+      {name: 'Jira'},
+      {name: 'Postman'},
     ],
   },
   {
-    img: "/img/home-decor-2.jpeg",
-    title: "Scandinavian",
-    tag: "Project #2",
+    img: '/img/nava_img.png',
+    title: 'NAVA - Pt. Cudo Communication',
+    info: 'NETWORK ASSETS VISUALIZATION & ANALYTICS',
+    tag: 'frontend development',
     description:
-      "Music is something that every person has his or her own specific opinion about.",
-    route: "/dashboard/profile",
-    members: [
-      { img: "/img/team-4.jpeg", name: "Alexander Smith" },
-      { img: "/img/team-3.jpeg", name: "Jessica Doe" },
-      { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
-      { img: "/img/team-1.jpeg", name: "Romina Hadid" },
-    ],
+      'Uncover Opportunities, Optimize Efficiency, and Maximize Growth with Network Assets Visualization & Analytics.',
+    route: '/dashboard/profile',
+    stack: [{name: 'React Typescript'}, {name: 'Javascript'}],
+    tools: [{name: 'Gitlab'}, {name: 'Trello'}, {name: 'Postman'}],
   },
-  {
-    img: "/img/home-decor-3.jpeg",
-    title: "Minimalist",
-    tag: "Project #3",
-    description:
-      "Different people have different taste, and various types of music.",
-    route: "/dashboard/profile",
-    members: [
-      { img: "/img/team-1.jpeg", name: "Romina Hadid" },
-      { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
-      { img: "/img/team-3.jpeg", name: "Jessica Doe" },
-      { img: "/img/team-4.jpeg", name: "Alexander Smith" },
-    ],
-  },
-  {
-    img: "/img/home-decor-4.jpeg",
-    title: "Gothic",
-    tag: "Project #4",
-    description:
-      "Why would anyone pick blue over pink? Pink is obviously a better color.",
-    route: "/dashboard/profile",
-    members: [
-      { img: "/img/team-4.jpeg", name: "Alexander Smith" },
-      { img: "/img/team-3.jpeg", name: "Jessica Doe" },
-      { img: "/img/team-2.jpeg", name: "Ryan Tompson" },
-      { img: "/img/team-1.jpeg", name: "Romina Hadid" },
-    ],
-  },
-];
 
-export default projectsData;
+  {
+    img: '/img/smartpatrol_img.png',
+    title: 'Smart Patrol - Pt. Cudo Communication',
+    info: 'Unlimited Access, Guaranteed Security!',
+    tag: 'frontend development',
+    description:
+      "This app provides security guards with essential tools for attendance, reporting, and scheduling, along with background location tracking. It's built offline-first to ensure constant access, even without an internet connection.",
+    route: '/dashboard/profile',
+    stack: [{name: 'Javascript'}, {name: 'Jquery'}],
+    tools: [{name: 'Gitlab'}, {name: 'Trello'}, {name: 'Postman'}],
+  },
+
+  {
+    img: '/img/evoltrack_img.png',
+    title: 'Evoltrack',
+    info: "It's Time to Supervise Easier",
+    tag: 'frontend development',
+    description: 'Easy Monitoring for Your Vehicle, Family and Pets!',
+    route: '/dashboard/profile',
+    stack: [{name: 'Next Js'}],
+    tools: [{name: 'Github'}, {name: 'Postman'}],
+  },
+]
+
+export default projectsData

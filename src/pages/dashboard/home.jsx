@@ -43,7 +43,7 @@ export function Home() {
             </div>
           </CardHeader>
           <CardBody className='overflow-x-auto p-5'>
-            {articlesData?.map((item, i) => {
+            {articlesData?.slice(0, 3).map((item, i) => {
               const {tag} = item
               return (
                 <article className='my-3' key={i}>

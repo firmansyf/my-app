@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export default function Ping(props) {
   return (
     <div className='flex relative items-center'>

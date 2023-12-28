@@ -1,7 +1,7 @@
 import Ping from '@/components/ping'
 import {setOpenSidenav, useMaterialTailwindController} from '@/context'
 import {XMarkIcon} from '@heroicons/react/24/outline'
-import {Button, IconButton, Typography, Chip} from '@material-tailwind/react'
+import {Button, IconButton, Typography} from '@material-tailwind/react'
 import PropTypes from 'prop-types'
 import {NavLink} from 'react-router-dom'
 

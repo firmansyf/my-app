@@ -35,7 +35,9 @@ export function Dashboard() {
           {routes.map(
             ({layout, pages}) =>
               layout === 'dashboard' &&
-              pages.map(({path, element}) => <Route exact path={path} element={element} />)
+              pages.map(({path, element}, index) => (
+                <Route key={index} exact path={path} element={element} />
+              ))
           )}
         </Routes>
         <div className='text-blue-gray-600'>

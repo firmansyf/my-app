@@ -1,52 +1,51 @@
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route} from 'react-router-dom'
 import {
   ChartPieIcon,
   UserIcon,
   UserPlusIcon,
   ArrowRightOnRectangleIcon,
-} from "@heroicons/react/24/solid";
-import { Navbar, Footer } from "@/widgets/layout";
-import routes from "@/routes";
+} from '@heroicons/react/24/solid'
+import routes from '@/routes'
 
 export function Auth() {
   const navbarRoutes = [
     {
-      name: "dashboard",
-      path: "/dashboard/home",
+      name: 'dashboard',
+      path: '/dashboard/home',
       icon: ChartPieIcon,
     },
     {
-      name: "profile",
-      path: "/dashboard/home",
+      name: 'profile',
+      path: '/dashboard/home',
       icon: UserIcon,
     },
     {
-      name: "sign up",
-      path: "/auth/sign-up",
+      name: 'sign up',
+      path: '/auth/sign-up',
       icon: UserPlusIcon,
     },
     {
-      name: "sign in",
-      path: "/auth/sign-in",
+      name: 'sign in',
+      path: '/auth/sign-in',
       icon: ArrowRightOnRectangleIcon,
     },
-  ];
+  ]
 
   return (
-    <div className="relative min-h-screen w-full">
+    <div className='relative min-h-screen w-full'>
       <Routes>
         {routes.map(
-          ({ layout, pages }) =>
-            layout === "auth" &&
-            pages.map(({ path, element }) => (
-              <Route exact path={path} element={element} />
+          ({layout, pages}) =>
+            layout === 'auth' &&
+            pages.map(({path, element}, index) => (
+              <Route key={index} exact path={path} element={element} />
             ))
         )}
       </Routes>
     </div>
-  );
+  )
 }
 
-Auth.displayName = "/src/layout/Auth.jsx";
+Auth.displayName = '/src/layout/Auth.jsx'
 
-export default Auth;
+export default Auth

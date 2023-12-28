@@ -1,15 +1,5 @@
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Typography,
-  Avatar,
-  Chip,
-  Tooltip,
-  Progress,
-} from '@material-tailwind/react'
-import {EllipsisVerticalIcon} from '@heroicons/react/24/outline'
-import {authorsTableData, projectsTableData} from '@/dataDummy'
+import {Card, CardHeader, CardBody, Typography, Avatar, Chip} from '@material-tailwind/react'
+import {authorsTableData} from '@/dataDummy'
 
 export function Analyst() {
   return (

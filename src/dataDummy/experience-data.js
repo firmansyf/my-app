@@ -1,10 +1,3 @@
-import {
-  ShoppingCartIcon,
-  CreditCardIcon,
-  LockOpenIcon,
-  BanknotesIcon,
-} from '@heroicons/react/24/solid'
-
 export const ordersOverviewData = [
   {
     icon: '/img-office/cudo.jpg',

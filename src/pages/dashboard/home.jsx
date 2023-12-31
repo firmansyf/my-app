@@ -1,4 +1,4 @@
-import {ordersOverviewData, articlesData} from '@/dataDummy'
+import {experienceData, articlesData} from '@/dataDummy'
 import {ArrowUpIcon, ClockIcon} from '@heroicons/react/24/outline'
 import {Button, Card, CardBody, CardFooter, CardHeader, Typography} from '@material-tailwind/react'
 import React from 'react'
@@ -120,12 +120,12 @@ export function Home() {
             </Typography>
           </CardHeader>
           <CardBody className='pt-0 overflow-y-auto max-h-full'>
-            {ordersOverviewData?.map(
-              ({icon, color, title, description, position, lokasi, jenis_pekerjaaan}, key) => (
+            {experienceData?.map(
+              ({icon, color, title, since, position, lokasi, jenis_pekerjaaan}, key) => (
                 <div key={title} className='flex items-start gap-4 py-3'>
                   <div
                     className={`relative p-1 after:absolute after:-bottom-6 after:left-2/4 after:w-0.5 after:-translate-x-2/4 after:bg-blue-gray-50 after:content-[''] ${
-                      key === ordersOverviewData.length - 1 ? 'after:h-0' : 'after:h-4/6'
+                      key === experienceData.length - 1 ? 'after:h-0' : 'after:h-4/6'
                     }`}
                   >
                     {React.createElement('img', {
@@ -155,7 +155,7 @@ export function Home() {
                       variant='small'
                       className='text-xs font-medium text-blue-gray-500'
                     >
-                      {description}
+                      {since}
                     </Typography>
                   </div>
                 </div>

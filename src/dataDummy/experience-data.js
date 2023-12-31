@@ -1,4 +1,4 @@
-export const ordersOverviewData = [
+export const experienceData = [
   {
     icon: '/img-office/cudo.jpg',
     color: 'text-blue-gray-300',
@@ -6,7 +6,8 @@ export const ordersOverviewData = [
     position: 'Frontend Developer',
     jenis_pekerjaaan: 'Full Time',
     lokasi: 'Di Tempat',
-    description: 'Sep 2023 - Des 2023',
+    kota: 'Tangerang, ID',
+    since: 'Sep 2023 - Des 2023',
   },
   {
     icon: '/img-office/assetData.jpg',
@@ -15,7 +16,8 @@ export const ordersOverviewData = [
     position: 'Frontend Developer',
     jenis_pekerjaaan: 'Part Time',
     lokasi: 'Jarak Jauh',
-    description: 'Sep 2023 - Des 2023',
+    kota: 'Kuala Lumpur, MY',
+    since: 'Sep 2023 - Des 2023',
   },
   {
     icon: '/img-office/assetData.jpg',
@@ -24,7 +26,8 @@ export const ordersOverviewData = [
     position: 'Frontend Developer',
     jenis_pekerjaaan: 'Full Time',
     lokasi: 'Jarak Jauh',
-    description: 'Sep 2021 - Sep 2023',
+    kota: 'Kuala Lumpur, MY',
+    since: 'Sep 2021 - Sep 2023',
   },
   {
     icon: '/img-office/empty-company.png',
@@ -33,8 +36,9 @@ export const ordersOverviewData = [
     position: 'CNC Operator',
     jenis_pekerjaaan: 'Full Time',
     lokasi: 'Di Tempat',
-    description: 'Dec 2020  - May 2021',
+    kota: 'Tangerang, ID',
+    since: 'Dec 2020  - May 2021',
   },
 ]
 
-export default ordersOverviewData
+export default experienceData

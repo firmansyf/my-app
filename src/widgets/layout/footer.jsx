@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import {Typography} from '@material-tailwind/react'
 
-export function Footer({brandName, brandLink, routes}) {
+export function Footer({routes}) {
   const year = new Date().getFullYear()
 
   return (

@@ -4,9 +4,12 @@ import {useEffect} from 'react'
 
 function App() {
   const {pathname} = useLocation()
+  // const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    // setLoading(true)
+    // setTimeout(() => setLoading(false), 2000)
   }, [pathname])
 
   return (

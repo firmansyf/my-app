@@ -9,7 +9,7 @@ export function Blog() {
 
   useEffect(() => {
     setLoading(true)
-    setTimeout(() => setLoading(false), 700)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   const handleOnClick = (url) => {

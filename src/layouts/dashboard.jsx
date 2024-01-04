@@ -27,7 +27,7 @@ export function Dashboard() {
           color='light-blue'
           className='fixed bottom-8 right-8 z-40 rounded-full shadow-blue-gray-900/10'
           ripple={false}
-          onClick={() => toTelegram('tg://resolve?domain=@Firmanysf')}
+          onClick={() => toTelegram('https://t.me/Firmanysf')}
         >
           <PaperAirplaneIcon className='h-5 w-5' />
         </IconButton>

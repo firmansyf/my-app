@@ -7,7 +7,7 @@ export function Project() {
   const [loading, setLoading] = useState(false)
   useEffect(() => {
     setLoading(true)
-    setTimeout(() => setLoading(false), 700)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   return (

@@ -1,5 +1,7 @@
 import {experienceData, skillData} from '@/dataDummy'
+import {CodeBracketSquareIcon, BriefcaseIcon, AcademicCapIcon} from '@heroicons/react/24/solid'
 import {Button, Card, CardBody, Typography} from '@material-tailwind/react'
+
 import React from 'react'
 
 export function About() {
@@ -55,7 +57,8 @@ export function About() {
           <hr className='bg-gray-200' style={{height: '0.1rem'}} />
 
           <div className='my-6'>
-            <Typography variant='h5' className='font-medium'>
+            <Typography variant='h5' className='font-medium flex items-center gap-1 mb-2'>
+              <CodeBracketSquareIcon className='w-6' />
               Skill
             </Typography>
             <span className='text-md tracking-wide'>My professional skills.</span>
@@ -73,8 +76,8 @@ export function About() {
           </section>
 
           <div className='my-6'>
-            <Typography variant='h5' className='font-medium'>
-              Career
+            <Typography variant='h5' className='font-medium flex items-center gap-1 mb-2'>
+              <BriefcaseIcon className='w-5' /> Career
             </Typography>
             <span className='text-md tracking-wide'>My professional career journey.</span>
           </div>
@@ -119,8 +122,8 @@ export function About() {
           <hr className='bg-gray-200 my-7' style={{height: '0.1rem'}} />
 
           <div className='my-6'>
-            <Typography variant='h5' className='font-medium'>
-              Education
+            <Typography variant='h5' className='font-medium flex items-center gap-1 mb-2'>
+              <AcademicCapIcon className='w-5' /> Education
             </Typography>
             <span className='text-md tracking-wide'>My education journey.</span>
           </div>
@@ -140,9 +143,11 @@ export function About() {
                     Universitas Widyatama
                   </Typography>
                   <div className='flex flex-col w-full'>
-                    <span className='text-sm text-slate-500 mr-2 tracking-wide leading-relaxed'>
-                      college student . Computer Engineering,
-                    </span>
+                    <section className='flex items-center text-lg gap-2 text-slate-500 mr-2 tracking-wide leading-relaxed'>
+                      college student{' '}
+                      <span className="mx-auto mt-1 block h-2 w-2 rounded-full bg-blue-gray-300 content-['']" />{' '}
+                      Computer Engineering
+                    </section>
                   </div>
                   <span className='text-xs text-slate-500 mt-2'>2023 - 2027</span>
                 </div>

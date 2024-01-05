@@ -5,9 +5,9 @@ import {Button, IconButton, Typography} from '@material-tailwind/react'
 import PropTypes from 'prop-types'
 import {NavLink} from 'react-router-dom'
 
-export function Sidenav({brandImg, isName, routes}) {
+export function Sidenav({isName, routes}) {
   const [controller, dispatch] = useMaterialTailwindController()
-  const {sidenavColor, sidenavType, openSidenav} = controller
+  const {sidenavType, openSidenav} = controller
   const sidenavTypes = {
     dark: 'bg-gradient-to-br from-gray-800 to-gray-900',
     white: 'bg-white shadow-sm',

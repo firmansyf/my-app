@@ -1,12 +1,9 @@
 {
-  "homepage": "https://firmansyf.github.io/my-app/",
   "name": "my-app",
   "private": true,
   "version": "2.1.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",

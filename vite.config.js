@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import eslintPlugin from 'vite-plugin-eslint'
 
 export default defineConfig({
-  // base: '/my-app/',
+  base: '/my-app/',
   plugins: [
     react(),
     eslintPlugin({

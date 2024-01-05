@@ -2,6 +2,7 @@ import Ping from '@/components/ping'
 import {setOpenSidenav, useMaterialTailwindController} from '@/context'
 import {XMarkIcon} from '@heroicons/react/24/outline'
 import {Button, IconButton, Typography} from '@material-tailwind/react'
+import yusuf from '@/assets/img-office/yusuf.jpg'
 import PropTypes from 'prop-types'
 import {NavLink} from 'react-router-dom'
 
@@ -22,7 +23,7 @@ export function Sidenav({isName, routes}) {
     >
       <div className={`relative`}>
         <section className='py-6 px-8 text-center flex justify-start items-center gap-5'>
-          <img src='/img-office/yusuf.jpg' className='w-16 rounded-full shadow-lg border-2' />
+          <img src={yusuf} className='w-16 rounded-full shadow-lg border-2' />
           <section className='flex flex-col'>
             <Typography variant='h6' color={sidenavType === 'dark' ? 'white' : 'blue-gray'}>
               {isName}

@@ -23,7 +23,11 @@ export function Home() {
         <PageLoader />
       ) : (
         <>
-          <div className='mb-10 grid gap-y-10 gap-x-6 md:grid-cols-1 xl:grid-cols-1 '>
+          <div
+            className='mb-10 grid gap-y-10 gap-x-6 md:grid-cols-1 xl:grid-cols-1'
+            data-aos='fade-up'
+            data-aos-duration='700'
+          >
             <Card className='shadow-sm border border-blue-gray-100'>
               <CardBody className='w-2/3'>
                 <div className='mb-3'>
@@ -38,7 +42,11 @@ export function Home() {
             </Card>
           </div>
 
-          <div className='mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3'>
+          <div
+            className='mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3'
+            data-aos='fade-up'
+            data-aos-duration='700'
+          >
             <Card className='overflow-hidden xl:col-span-2 border border-blue-gray-100 shadow-sm'>
               <CardHeader
                 floated={false}

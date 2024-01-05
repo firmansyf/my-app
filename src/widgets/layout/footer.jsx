@@ -5,7 +5,7 @@ export function Footer({routes}) {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='py-2'>
+    <footer className='py-5 mt-7'>
       <div className='flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between'>
         <Typography variant='small' className='font-normal text-inherit'>
           &copy; {year} yusuf Firmansyah

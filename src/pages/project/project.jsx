@@ -19,7 +19,12 @@ export function Project() {
           {projectsData.map((data, i) => {
             const {stack, tools} = data
             return (
-              <Card key={i} className='w-full max-w-[48rem] flex-row'>
+              <Card
+                key={i}
+                className='w-full max-w-[48rem] flex-row'
+                data-aos='fade-up'
+                data-aos-duration='700'
+              >
                 <CardHeader
                   shadow={false}
                   floated={false}

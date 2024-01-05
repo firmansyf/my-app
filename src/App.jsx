@@ -1,15 +1,21 @@
+import 'aos/dist/aos.css'
 import {Routes, Route, Navigate, useLocation} from 'react-router-dom'
 import {Dashboard, Auth} from '@/layouts'
 import {useEffect} from 'react'
+import AOS from 'aos'
 
 function App() {
   const {pathname} = useLocation()
-  // const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    AOS.init({
+      debounceDelay: 200,
+      delay: 150,
+    })
+  }, [])
 
   useEffect(() => {
     window.scrollTo(0, 0)
-    // setLoading(true)
-    // setTimeout(() => setLoading(false), 2000)
   }, [pathname])
 
   return (

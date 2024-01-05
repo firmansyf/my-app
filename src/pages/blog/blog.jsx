@@ -21,7 +21,7 @@ export function Blog() {
       {loading ? (
         <PageLoader />
       ) : (
-        <Card className='w-full'>
+        <Card className='w-full' data-aos='fade-up' data-aos-duration='700'>
           <CardBody>
             <Typography>Latest post</Typography>
             {articlesData?.map((item, i) => {

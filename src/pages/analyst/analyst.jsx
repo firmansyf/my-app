@@ -16,7 +16,7 @@ export function Analyst() {
       {loading ? (
         <PageLoader />
       ) : (
-        <Card>
+        <Card data-aos='fade-up' data-aos-duration='700'>
           <CardHeader variant='gradient' color='white' className='mb-8 p-6'>
             <Typography variant='h6' color='dark'>
               Analyst Table

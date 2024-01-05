@@ -16,7 +16,7 @@ export function About() {
       {loading ? (
         <PageLoader />
       ) : (
-        <Card className='p-3'>
+        <Card className='p-3' data-aos='fade-up' data-aos-duration='700'>
           <Typography variant='h5' className='m-4 font-normal leading-loose'>
             A short story of me, not important but seem better than nothing.
           </Typography>

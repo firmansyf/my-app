@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 import eslintPlugin from 'vite-plugin-eslint'
 
 export default defineConfig({
-  base: '#',
   plugins: [
     react(),
     eslintPlugin({
@@ -15,4 +14,5 @@ export default defineConfig({
   resolve: {
     alias: [{find: '@', replacement: '/src'}],
   },
+  base: '/my-app/',
 })

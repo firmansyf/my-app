@@ -29,11 +29,11 @@ export function Home() {
             data-aos-duration='700'
           >
             <Card className='shadow-sm border border-blue-gray-100'>
-              <CardBody className='w-2/3'>
+              <CardBody className='lg:w-2/3 sm:w-full'>
                 <div className='mb-3'>
                   <Typography variant='h4'>Hi, {"i'am Yusuf Firmansyah"}</Typography>
                 </div>
-                <Typography variant='paragraph' className='tracking-wide font-normal'>
+                <Typography variant='paragraph' className='tracking-wide font-normal w-full'>
                   I am an experienced frontend developer with a focus on attractive and interactive
                   user interface pages. {"I'm"} dedicated to creating web applications that stand
                   out, are responsive, and are reliable.
@@ -71,17 +71,24 @@ export function Home() {
                         onClick={() => handleOnClick(item.path)}
                       >
                         <div className='flex gap-5 items-center'>
-                          <img src={item.img} className='w-24 h-24 rounded-lg shadow-md' />
+                          <img
+                            src={item.img}
+                            className='lg:w-24 lg:h-24 sm:w-16 sm:h-16 rounded-lg shadow-md'
+                          />
 
                           <div className='mt-2 w-full'>
-                            <Typography variant='h5'>{item.title}</Typography>
-                            <p className='text-md tracking-wide w-full'>{item?.description}</p>
+                            <Typography className='lg:font-bold lg:text-xl sm:text-md sm:font-bold'>
+                              {item.title}
+                            </Typography>
+                            <p className='lg:text-md sm:text-sm tracking-wide w-full'>
+                              {item?.description}
+                            </p>
 
-                            <section className='flex gap-1 mt-2 items-center'>
+                            <section className='flex gap-1 mt-2 items-center sm:flex-wrap'>
                               {tag.map((dt, i) => (
                                 <span
                                   key={i}
-                                  className='text-xs p-1 rounded-xl shadow-sm'
+                                  className='text-xs p-1 rounded-xl lg:w-auto sm:w-1/3 shadow-sm sm:text-center'
                                   style={{backgroundColor: '#EEE'}}
                                 >
                                   {dt}

@@ -1,6 +1,10 @@
+import cudo from '@/assets/img-office/cudo.jpg'
+import assetData from '@/assets/img-office/assetData.jpg'
+import emptyComp from '@/assets/img-office/empty-company.png'
+
 export const experienceData = [
   {
-    icon: '/img-office/cudo.jpg',
+    icon: cudo,
     color: 'text-blue-gray-300',
     title: 'PT Cudo Communication',
     position: 'Frontend Developer',
@@ -10,7 +14,7 @@ export const experienceData = [
     since: 'Sep 2023 - Des 2023',
   },
   {
-    icon: '/img-office/assetData.jpg',
+    icon: assetData,
     color: 'text-blue-gray-300',
     title: 'AssetData.io',
     position: 'Frontend Developer',
@@ -20,7 +24,7 @@ export const experienceData = [
     since: 'Sep 2023 - Des 2023',
   },
   {
-    icon: '/img-office/assetData.jpg',
+    icon: assetData,
     color: 'text-blue-gray-300',
     title: 'AssetData.io',
     position: 'Frontend Developer',
@@ -30,7 +34,7 @@ export const experienceData = [
     since: 'Sep 2021 - Sep 2023',
   },
   {
-    icon: '/img-office/empty-company.png',
+    icon: emptyComp,
     color: 'text-blue-gray-300',
     title: 'PT. Systema Precission',
     position: 'CNC Operator',

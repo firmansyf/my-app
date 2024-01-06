@@ -6,7 +6,7 @@ import {IconButton} from '@material-tailwind/react'
 import {Route, Routes} from 'react-router-dom'
 
 export function Dashboard() {
-  const [controller, dispatch] = useMaterialTailwindController()
+  const [controller] = useMaterialTailwindController() // dispatch
   const {sidenavType} = controller
 
   const toTelegram = (url) => {

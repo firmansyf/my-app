@@ -1,3 +1,8 @@
+import reactCy from '@/assets/img/react-cypress.png'
+import reactCRUD from '@/assets/img/react-crud.png'
+import githubCode from '@/assets/img/github-code.png'
+import reactVite from '@/assets/img/react-vite.png'
+
 export const articlesData = [
   {
     title: 'Learn Cypress from zero to hero in 3 step',
@@ -6,7 +11,7 @@ export const articlesData = [
     tag: ['learn Cypress', 'on medium'],
     duration: '2 min read',
     date: 'Feb 5, 2022',
-    img: '/img/react-cypress.png',
+    img: reactCy,
     path: 'https://medium.com/@yusuffirmansyah/learn-cypress-from-zero-to-hero-in-3-steps-b318ca3a6110',
   },
   {
@@ -15,7 +20,7 @@ export const articlesData = [
     tag: ['reactJs', 'on youtube'],
     duration: '34 min watch',
     date: 'Apr 20, 2023',
-    img: '/img/react-crud.png',
+    img: reactCRUD,
     path: 'https://www.youtube.com/watch?v=qx95CjOuZR0&t=72s',
   },
 
@@ -26,7 +31,7 @@ export const articlesData = [
     duration: '4 min watch',
     date: 'Apr 23, 2023',
     path: 'https://www.youtube.com/watch?v=RS8i7NetNuo&t=14s',
-    img: '/img/github-code.png',
+    img: githubCode,
   },
   {
     title: 'Install ReactJS with Vite',
@@ -35,7 +40,7 @@ export const articlesData = [
     duration: '4 min watch',
     date: 'Apr 29, 2023',
     path: 'https://www.youtube.com/watch?v=_Ml8hMLt_CI&t=49s',
-    img: '/img/react-vite.png',
+    img: reactVite,
   },
 ]
 

@@ -1,6 +1,11 @@
+import assetDataImg from '@/assets/img/assetdata_img.png'
+import NavaImg from '@/assets/img/nava_img.png'
+import smartPatrolImg from '@/assets/img/smartpatrol_img.png'
+import evolTrackImg from '@/assets/img/evoltrack_img.png'
+
 export const projectsData = [
   {
-    img: '/img/assetdata_img.png',
+    img: assetDataImg,
     title: 'AssetData platform - AssetData.io',
     info: 'Maintenance and Management Asset',
     tag: 'frontend development',
@@ -17,7 +22,7 @@ export const projectsData = [
     ],
   },
   {
-    img: '/img/nava_img.png',
+    img: NavaImg,
     title: 'NAVA - Pt. Cudo Communication',
     info: 'NETWORK ASSETS VISUALIZATION & ANALYTICS',
     tag: 'frontend development',
@@ -29,7 +34,7 @@ export const projectsData = [
   },
 
   {
-    img: '/img/smartpatrol_img.png',
+    img: smartPatrolImg,
     title: 'Smart Patrol - Pt. Cudo Communication',
     info: 'Unlimited Access, Guaranteed Security!',
     tag: 'frontend development',
@@ -41,7 +46,7 @@ export const projectsData = [
   },
 
   {
-    img: '/img/evoltrack_img.png',
+    img: evolTrackImg,
     title: 'Evoltrack',
     info: "It's Time to Supervise Easier",
     tag: 'frontend development',

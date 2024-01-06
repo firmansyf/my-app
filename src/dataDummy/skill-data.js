@@ -1,60 +1,72 @@
+import javascript from '@/assets/img/javascript_icon.png'
+import jquery from '@/assets/img/jquery_icon.png'
+import react from '@/assets/img/react_icon.png'
+import typescript from '@/assets/img/typescript-icon.png'
+import cypress from '@/assets/img/cypress-icon.png'
+import bootstrap from '@/assets/img/bootstrap-icon.png'
+import tailwind from '@/assets/img/tailwindcss.png'
+import chakraUi from '@/assets/img/chakra-icon.png'
+import redux from '@/assets/img/redux-toolkit.png'
+import styledComponent from '@/assets/img/styled-component-icon.png'
+import vite from '@/assets/img/vite_icon.png'
+
 export const skillData = [
   {
     value: 'javascript',
     label: 'Javascript',
-    icon: '/img/javascript_icon.png',
+    icon: javascript,
   },
   {
     value: 'jquery',
     label: 'Jquery',
-    icon: '/img/jquery_icon.png',
+    icon: jquery,
   },
   {
     value: 'react-js',
     label: 'React JS',
-    icon: '/img/react-icon.png',
+    icon: react,
   },
   {
     value: 'typescript',
     label: 'Typescript',
-    icon: '/img/typescript-icon.png',
+    icon: typescript,
   },
   {
     value: 'cypress',
     label: 'Cypress.io',
-    icon: '/img/cypress-icon.png',
+    icon: cypress,
   },
   {
     value: 'bootstrap',
     label: 'Bootstrap',
-    icon: '/img/bootstrap-icon.png',
+    icon: bootstrap,
   },
   {
     value: 'tailwind-css',
     label: 'TailwindCSS',
-    icon: '/img/tailwindcss.png',
+    icon: tailwind,
   },
   {
     value: 'chakra-ui',
     label: 'Chakra UI',
-    icon: '/img/chakra-icon.png',
+    icon: chakraUi,
   },
   {
     value: 'redux-toolkit',
     label: 'Redux Toolkit',
-    icon: '/img/redux-toolkit.png',
+    icon: redux,
   },
 
   {
     value: 'styled-component',
     label: 'Styled Component',
-    icon: '/img/styled-component-icon.png',
+    icon: styledComponent,
   },
 
   {
     value: 'vite',
     label: 'Vite',
-    icon: '/img/vite_icon.png',
+    icon: vite,
   },
 ]
 

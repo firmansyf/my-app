@@ -3,6 +3,7 @@ import {experienceData, skillData} from '@/dataDummy'
 import {CodeBracketSquareIcon, BriefcaseIcon, AcademicCapIcon} from '@heroicons/react/24/solid'
 import {Button, Card, CardBody, Typography} from '@material-tailwind/react'
 import React, {useState, useEffect} from 'react'
+import univImg from '@/assets/img-office/univ-img.png'
 
 export function About() {
   const [loading, setLoading] = useState(false)
@@ -135,7 +136,7 @@ export function About() {
                 <div className='flex p-3 items-center'>
                   <div className='img-company mx-2'>
                     <img
-                      src='/img-office/univ-img.png'
+                      src={univImg}
                       alt='company-logo'
                       className='w-20 rounded-full border-white border-3'
                     />

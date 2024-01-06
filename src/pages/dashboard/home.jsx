@@ -88,7 +88,7 @@ export function Home() {
                               {tag.map((dt, i) => (
                                 <span
                                   key={i}
-                                  className='text-xs p-1 rounded-xl lg:w-auto sm:w-1/3 shadow-sm sm:text-center'
+                                  className='lg:text-xs sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
                                   style={{backgroundColor: '#EEE'}}
                                 >
                                   {dt}

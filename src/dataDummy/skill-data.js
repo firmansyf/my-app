@@ -1,6 +1,6 @@
 import javascript from '@/assets/img/javascript_icon.png'
 import jquery from '@/assets/img/jquery_icon.png'
-import react from '@/assets/img/react_icon.png'
+import react from '@/assets/img/react-icon.png'
 import typescript from '@/assets/img/typescript-icon.png'
 import cypress from '@/assets/img/cypress-icon.png'
 import bootstrap from '@/assets/img/bootstrap-icon.png'

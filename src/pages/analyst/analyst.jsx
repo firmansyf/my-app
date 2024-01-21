@@ -23,7 +23,7 @@ export function Analyst() {
               Analyst Table
             </Typography>
           </CardHeader>
-          <CardBody className='overflow-x-auto px-0 pt-0 pb-2 min-h-[400px]'>
+          <CardBody className='overflow-x-auto px-0 pt-0 pb-2 min-h-[400px] sm:p-6'>
             <section className='w-full flex justify-center flex-col items-center gap-2'>
               {createElement('img', {
                 className: 'w-96',

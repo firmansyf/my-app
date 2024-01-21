@@ -43,10 +43,10 @@ export function Sidenav({isName, routes}) {
           color='white'
           size='sm'
           ripple={false}
-          className='absolute right-0 top-0 grid rounded-br-none rounded-tl-none xl:hidden'
+          className='absolute right-1 top-2 grid rounded-br-none rounded-tl-none xl:hidden'
           onClick={() => setOpenSidenav(dispatch, false)}
         >
-          <XMarkIcon strokeWidth={2.5} className='h-5 w-5 text-white' />
+          <XMarkIcon strokeWidth={2.5} className='h-5 w-5 text-black' />
         </IconButton>
       </div>
       <div className='m-4'>

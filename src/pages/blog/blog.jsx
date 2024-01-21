@@ -29,10 +29,10 @@ export function Blog() {
               return (
                 <article className='my-3' key={i}>
                   <Card
-                    className='p-3 w-4/5 border border-blue-gray-50 shadow-sm cursor-pointer relative hover:bg-blue-gray-50 transition-all'
+                    className='p-3 sm:w-full w-4/5 border border-blue-gray-50 shadow-sm cursor-pointer relative hover:bg-blue-gray-50 transition-all'
                     onClick={() => handleOnClick(item.path)}
                   >
-                    <div className='flex gap-5 items-center'>
+                    <div className='flex gap-5 items-center sm:flex-col lg:flex-row'>
                       <img src={item.img} className='w-24 h-24 rounded-lg shadow-md' />
 
                       <div className='mt-2 w-full'>

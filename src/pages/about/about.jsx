@@ -85,20 +85,19 @@ export function About() {
               <span className='text-md tracking-wide'>My professional career journey.</span>
             </div>
 
-            <section className='flex flex-wrap gap-3'>
+            <section className='flex flex-wrap gap-3 sm:flex-col lg:flex-row'>
               {experienceData.map((item, i) => {
                 return (
                   <div
-                    className='flex my-2 p-3 border-2 rounded-xl bg-slate-50'
+                    className='flex my-2 p-3 border-2 rounded-xl bg-slate-50 lg:w-[48%] sm:w-full'
                     key={i}
-                    style={{width: '48%'}}
                   >
                     <div className='flex p-3 items-center'>
-                      <div className='img-company mx-2'>
+                      <div className='img-company mx-2 border-8 rounded-full'>
                         <img
                           src={item.icon}
                           alt='company-logo'
-                          className='w-16 rounded-full border-white border-3'
+                          className='w-16 rounded-full border-3'
                         />
                       </div>
                       <div className='flex flex-col mx-2'>

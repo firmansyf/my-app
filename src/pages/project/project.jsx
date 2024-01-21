@@ -21,7 +21,7 @@ export function Project() {
             return (
               <Card
                 key={i}
-                className='w-full max-w-[48rem] flex-row'
+                className='w-full max-w-[48rem] flex-row overflow-auto sm:p-3'
                 data-aos='fade-up'
                 data-aos-duration='700'
               >

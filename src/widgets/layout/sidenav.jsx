@@ -68,6 +68,7 @@ export function Sidenav({isName, routes}) {
                 <NavLink to={`/${layout}${path}`}>
                   {({isActive}) => (
                     <Button
+                      onClick={() => setOpenSidenav(dispatch, false)}
                       variant={isActive ? 'gradient' : 'text'}
                       color={
                         // isActive ? sidenavColor : sidenavType === 'dark' ? 'white' : 'blue-gray'

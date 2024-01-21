@@ -88,17 +88,17 @@ export function Home() {
                               {tag.map((dt, i) => (
                                 <span
                                   key={i}
-                                  className='lg:text-xs sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
+                                  className='lg:text-sm sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
                                   style={{backgroundColor: '#EEE'}}
                                 >
                                   {dt}
                                 </span>
                               ))}
-                              <span className='text-xs p-1 rounded-xl flex items-center'>
+                              <span className='text-sm p-1 rounded-xl flex items-center'>
                                 <ClockIcon className='w-4 mx-1' />
                                 {item.duration}
                               </span>
-                              <span className='text-xs'>{item.date}</span>
+                              <span className='text-sm'>{item.date}</span>
                             </section>
                           </div>
                         </div>
@@ -172,14 +172,14 @@ export function Home() {
                           {position}
                         </Typography>
                         <div className='flex mb-0 gap-1'>
-                          <span className='text-xs text-gray-500 '>{lokasi},</span>
+                          <span className='text-sm text-gray-500 '>{lokasi},</span>
 
-                          <span className='text-xs text-gray-500'>{jenis_pekerjaaan}</span>
+                          <span className='text-sm text-gray-500'>{jenis_pekerjaaan}</span>
                         </div>
                         <Typography
                           as='span'
                           variant='small'
-                          className='text-xs font-medium text-blue-gray-500'
+                          className='text-sm font-medium text-blue-gray-500'
                         >
                           {since}
                         </Typography>

@@ -1,25 +1,6 @@
 import {useLocation, Link} from 'react-router-dom'
-import {
-  Navbar,
-  Typography,
-  Button,
-  IconButton,
-  Breadcrumbs,
-  Input,
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Avatar,
-} from '@material-tailwind/react'
-import {
-  UserCircleIcon,
-  Cog6ToothIcon,
-  BellIcon,
-  ClockIcon,
-  CreditCardIcon,
-  Bars3Icon,
-} from '@heroicons/react/24/solid'
+import {Navbar, Typography, IconButton, Breadcrumbs, Input} from '@material-tailwind/react'
+import {Cog6ToothIcon, Bars3Icon} from '@heroicons/react/24/solid'
 import {useMaterialTailwindController, setOpenConfigurator, setOpenSidenav} from '@/context'
 
 export function DashboardNavbar() {
@@ -74,7 +55,7 @@ export function DashboardNavbar() {
           >
             <Bars3Icon strokeWidth={3} className='h-6 w-6 text-blue-gray-500' />
           </IconButton>
-          <Link to='/auth/sign-in'>
+          {/* <Link to='/auth/sign-in'>
             <Button
               variant='text'
               color='blue-gray'
@@ -86,8 +67,8 @@ export function DashboardNavbar() {
             <IconButton variant='text' color='blue-gray' className='grid xl:hidden'>
               <UserCircleIcon className='h-5 w-5 text-blue-gray-500' />
             </IconButton>
-          </Link>
-          <Menu>
+          </Link> */}
+          {/* <Menu>
             <MenuHandler>
               <IconButton variant='text' color='blue-gray'>
                 <BellIcon className='h-5 w-5 text-blue-gray-500' />
@@ -152,7 +133,7 @@ export function DashboardNavbar() {
                 </div>
               </MenuItem>
             </MenuList>
-          </Menu>
+          </Menu> */}
           <IconButton
             variant='text'
             color='blue-gray'

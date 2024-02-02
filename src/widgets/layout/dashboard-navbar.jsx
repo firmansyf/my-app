@@ -1,9 +1,11 @@
-import {useLocation, Link} from 'react-router-dom'
-import {Navbar, Typography, IconButton, Breadcrumbs, Input} from '@material-tailwind/react'
+import {useLocation, Link, useNavigate} from 'react-router-dom'
+import {Navbar, Typography, IconButton, Breadcrumbs, Avatar} from '@material-tailwind/react'
 import {Cog6ToothIcon, Bars3Icon} from '@heroicons/react/24/solid'
 import {useMaterialTailwindController, setOpenConfigurator, setOpenSidenav} from '@/context'
+import yusuf from '@/assets/img-office/yusuf.jpg'
 
 export function DashboardNavbar() {
+  const navigate = useNavigate()
   const [controller, dispatch] = useMaterialTailwindController()
   const {fixedNavbar, openSidenav} = controller
   const {pathname} = useLocation()
@@ -44,9 +46,9 @@ export function DashboardNavbar() {
           </Typography>
         </div>
         <div className='flex items-center'>
-          <div className='mr-auto md:mr-4 md:w-56'>
+          {/* <div className='mr-auto md:mr-4 md:w-56'>
             <Input label='Search' />
-          </div>
+          </div> */}
           <IconButton
             variant='text'
             color='blue-gray'
@@ -134,6 +136,10 @@ export function DashboardNavbar() {
               </MenuItem>
             </MenuList>
           </Menu> */}
+          <section className='mx-3 cursor-pointer' onClick={() => navigate('/profile')}>
+            <Avatar src={yusuf} size='sm' />
+          </section>
+
           <IconButton
             variant='text'
             color='blue-gray'

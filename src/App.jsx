@@ -1,6 +1,7 @@
 import 'aos/dist/aos.css'
 import {Routes, Route, Navigate, useLocation} from 'react-router-dom'
 import {Dashboard, Auth} from '@/layouts'
+
 import {useEffect} from 'react'
 import AOS from 'aos'
 

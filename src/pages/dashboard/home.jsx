@@ -132,7 +132,7 @@ export function Home() {
               </CardFooter>
             </Card>
 
-            <Card className='border border-blue-gray-100 shadow-sm' style={{height: '75vh'}}>
+            <Card className='border overflow-auto max-sm:min-h-[60vh] min-h-[80vh] border-blue-gray-100 shadow-sm'>
               <CardHeader floated={false} shadow={false} color='transparent' className='m-0 p-6'>
                 <Typography variant='h6' color='blue-gray' className='mb-2'>
                   Experience

@@ -1,4 +1,5 @@
 import {useMaterialTailwindController} from '@/context'
+import {Profile} from '@/pages'
 import routes from '@/routes'
 import {Configurator, DashboardNavbar, Footer, Sidenav} from '@/widgets/layout'
 import {PaperAirplaneIcon} from '@heroicons/react/24/solid'
@@ -36,7 +37,10 @@ export function Dashboard() {
             ({layout, pages}) =>
               layout === 'dashboard' &&
               pages.map(({path, element}, index) => (
-                <Route key={index} exact path={path} element={element} />
+                <>
+                  <Route key={index} exact path={path} element={element} />
+                  <Route path='/profile' element={<Profile />} replace />
+                </>
               ))
           )}
         </Routes>

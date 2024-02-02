@@ -1,11 +1,5 @@
-import {Home, Blog, Analyst, Project, About} from '@/pages'
-import {
-  ChartBarIcon,
-  CodeBracketIcon,
-  HomeIcon,
-  InformationCircleIcon,
-  LinkIcon,
-} from '@heroicons/react/24/solid'
+import {Home, Blog, Project, About} from '@/pages'
+import {CodeBracketIcon, HomeIcon, InformationCircleIcon, LinkIcon} from '@heroicons/react/24/solid'
 
 const icon = {
   className: 'w-5 h-5 text-inherit',
@@ -22,12 +16,13 @@ export const routes = [
         element: <Home />,
       },
 
-      {
-        icon: <ChartBarIcon {...icon} />,
-        name: 'analyst',
-        path: '/analyst',
-        element: <Analyst />,
-      },
+      // {
+      //   icon: <ChartBarIcon {...icon} />,
+      //   name: 'analyst',
+      //   path: '/analyst',
+      //   element: <Analyst />,
+      // },
+
       {
         icon: <LinkIcon {...icon} />,
         name: 'blog',

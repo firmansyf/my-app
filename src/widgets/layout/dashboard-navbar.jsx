@@ -51,7 +51,7 @@ export function DashboardNavbar() {
           <IconButton
             variant='text'
             color='blue-gray'
-            className='grid xl:hidden mx-4'
+            className='grid xl:hidden lg:mx-4'
             onClick={() => setOpenSidenav(dispatch, !openSidenav)}
           >
             <Bars3Icon strokeWidth={3} className='h-6 w-6 text-blue-gray-500' />

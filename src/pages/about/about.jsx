@@ -12,6 +12,12 @@ export function About() {
     setTimeout(() => setLoading(false), 1000)
   }, [])
 
+  const onClick = () => {
+    const urlResume =
+      'https://drive.google.com/file/d/1_Tgpuxn-pnGrc2Z6K7IyYL3j7qMp-JF8/view?usp=sharing'
+    window.open(urlResume, '_blank')
+  }
+
   return (
     <div className='my-14 w-full flex items-center flex-col gap-8'>
       {loading ? (
@@ -52,7 +58,7 @@ export function About() {
             </Typography>
 
             <div className='my-6'>
-              <Button className='' color='green' variant='outlined' size='md'>
+              <Button className='' onClick={onClick} color='green' variant='outlined' size='md'>
                 Download Resume
               </Button>
             </div>

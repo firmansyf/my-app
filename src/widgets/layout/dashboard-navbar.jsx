@@ -1,7 +1,7 @@
 import {useLocation, Link} from 'react-router-dom'
 import {Navbar, Typography, IconButton, Breadcrumbs, Avatar} from '@material-tailwind/react'
-import {Cog6ToothIcon, Bars3Icon} from '@heroicons/react/24/solid'
-import {useMaterialTailwindController, setOpenConfigurator, setOpenSidenav} from '@/context'
+import {Bars3Icon} from '@heroicons/react/24/solid'
+import {useMaterialTailwindController, setOpenSidenav} from '@/context'
 import yusuf from '@/assets/img-office/yusuf.jpg'
 
 export function DashboardNavbar() {
@@ -140,14 +140,14 @@ export function DashboardNavbar() {
               <Avatar src={yusuf} size='sm' />
             </Link>
 
-            <IconButton
+            {/* <IconButton
               variant='text'
               color='blue-gray'
               className=''
               onClick={() => setOpenConfigurator(dispatch, true)}
             >
               <Cog6ToothIcon className='h-5 w-5 text-blue-gray-500' />
-            </IconButton>
+            </IconButton> */}
           </div>
         </div>
       </div>

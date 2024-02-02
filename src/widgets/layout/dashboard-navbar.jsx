@@ -44,14 +44,14 @@ export function DashboardNavbar() {
             {page}
           </Typography>
         </div>
-        <div className='flex items-center'>
+        <div className='flex items-center sm:justify-between'>
           {/* <div className='mr-auto md:mr-4 md:w-56'>
             <Input label='Search' />
           </div> */}
           <IconButton
             variant='text'
             color='blue-gray'
-            className='grid xl:hidden'
+            className='grid xl:hidden mx-4'
             onClick={() => setOpenSidenav(dispatch, !openSidenav)}
           >
             <Bars3Icon strokeWidth={3} className='h-6 w-6 text-blue-gray-500' />
@@ -135,17 +135,20 @@ export function DashboardNavbar() {
               </MenuItem>
             </MenuList>
           </Menu> */}
-          <Link to='/dashboard/profile'>
-            <Avatar src={yusuf} size='sm' />
-          </Link>
+          <div className='flex gap-2 items-center'>
+            <Link to='/dashboard/profile' className=''>
+              <Avatar src={yusuf} size='sm' />
+            </Link>
 
-          <IconButton
-            variant='text'
-            color='blue-gray'
-            onClick={() => setOpenConfigurator(dispatch, true)}
-          >
-            <Cog6ToothIcon className='h-5 w-5 text-blue-gray-500' />
-          </IconButton>
+            <IconButton
+              variant='text'
+              color='blue-gray'
+              className=''
+              onClick={() => setOpenConfigurator(dispatch, true)}
+            >
+              <Cog6ToothIcon className='h-5 w-5 text-blue-gray-500' />
+            </IconButton>
+          </div>
         </div>
       </div>
     </Navbar>

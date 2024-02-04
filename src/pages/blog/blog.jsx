@@ -33,7 +33,10 @@ export function Blog() {
                     onClick={() => handleOnClick(item.path)}
                   >
                     <div className='flex gap-5 items-center sm:flex-col lg:flex-row'>
-                      <img src={item.img} className='w-24 h-24 rounded-lg shadow-md' />
+                      <img
+                        src={item.img}
+                        className='lg:w-24 lg:h-24 sm:w-full sm:h-60 md:h-96 rounded-lg shadow-md'
+                      />
 
                       <div className='mt-2 w-full'>
                         <Typography variant='h5'>{item.title}</Typography>

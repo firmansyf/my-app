@@ -70,10 +70,10 @@ export function Home() {
                         className='p-3 border border-blue-gray-50 shadow-sm cursor-pointer relative hover:bg-blue-gray-50 transition-all'
                         onClick={() => handleOnClick(item.path)}
                       >
-                        <div className='flex gap-5 items-center'>
+                        <div className='flex sm:flex-col lg:flex-row gap-5 items-center'>
                           <img
                             src={item.img}
-                            className='lg:w-24 lg:h-24 sm:w-16 sm:h-16 rounded-lg shadow-md'
+                            className='lg:w-24 lg:h-24 sm:w-full sm:h-60 md:h-96 rounded-lg shadow-md'
                           />
 
                           <div className='mt-2 w-full'>

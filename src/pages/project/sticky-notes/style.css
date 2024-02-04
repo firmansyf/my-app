@@ -1,0 +1,8 @@
+.content .section-content {
+  width: 13rem;
+  height: 10rem;
+
+  padding: 10;
+  background-color: rgb(247, 172, 32);
+  border-radius: 10px;
+}

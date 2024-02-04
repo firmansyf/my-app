@@ -42,11 +42,11 @@ export function Project() {
                   <Typography color='gray' className='mb-5 font-normal'>
                     {data?.description}
                   </Typography>
-                  <div className='flex flex-wrap items-center h-16'>
+                  <div className='flex flex-wrap items-center lg:h-16 sm:h-auto'>
                     {stack?.map(({name}, i) => (
                       <span
                         key={i}
-                        className='mx-1 p-1 text-xs border-2 border-blue-gray rounded-lg'
+                        className='lg:mx-1 p-1 text-xs border-2 border-blue-gray rounded-lg sm:m-1'
                       >
                         {name}
                       </span>
@@ -55,7 +55,7 @@ export function Project() {
                     {tools?.map(({name}, i) => (
                       <span
                         key={i}
-                        className='mx-1 p-1 text-xs border-2 border-blue-gray rounded-lg'
+                        className='lg:mx-1 p-1 text-xs border-2 border-blue-gray rounded-lg sm:m-1'
                       >
                         {name}
                       </span>

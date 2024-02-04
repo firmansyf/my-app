@@ -11,7 +11,7 @@ export const experienceData = [
     jenis_pekerjaaan: 'Full Time',
     lokasi: 'Di Tempat',
     kota: 'Tangerang, ID',
-    since: 'Sep 2023 - Des 2023',
+    since: 'Sep 2023 - Jan 2024',
   },
   {
     icon: assetData,

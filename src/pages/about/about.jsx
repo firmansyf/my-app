@@ -95,22 +95,22 @@ export function About() {
               {experienceData.map((item, i) => {
                 return (
                   <div
-                    className='flex my-2 p-3 border-2 rounded-xl bg-slate-50 lg:w-[48%] sm:w-full'
+                    className='flex my-2 p-3 border-2 rounded-xl bg-slate-50 lg:w-[48%] md:w-full sm:w-full'
                     key={i}
                   >
-                    <div className='flex p-3 items-center'>
-                      <div className='img-company mx-2 border-8 rounded-full'>
+                    <div className='flex sm:flex-col gap-2 md:flex-col lg:flex-row p-3 items-center justify-center w-full'>
+                      <div className='img-company md:flex-1  flex justify-center items-center mx-2'>
                         <img
                           src={item.icon}
                           alt='company-logo'
-                          className='w-16 rounded-full border-3'
+                          className='w-16 rounded-full border-3 shadow-md p-1'
                         />
                       </div>
-                      <div className='flex flex-col mx-2'>
+                      <div className='w-full flex md:flex-1 flex-col mx-2 justify-center items-center'>
                         <h2 className=''>{item.position}</h2>
-                        <div className='flex flex-col w-full'>
-                          <div>
-                            <span className='text-sm text-slate-500 mr-2 tracking-wide leading-relaxed'>
+                        <div className='flex flex-col w-full justify-center items-center'>
+                          <div className=' flex flex-col w-full items-center justify-center'>
+                            <span className='text-sm text-slate-500 text-center mr-2 tracking-wide leading-relaxed'>
                               {item.title},
                             </span>
                             <span className='text-sm text-slate-500'>{item.kota}</span>
@@ -138,7 +138,7 @@ export function About() {
 
             <section className='w-full mb-7'>
               <div className='flex my-2 p-3 border-2 rounded-xl bg-slate-50 w-full'>
-                <div className='flex p-3 items-center'>
+                <div className='flex lg:flex-row md:flex-col sm:flex-col sm:gap-2 p-3 items-center w-full sm:justify-center'>
                   <div className='img-company mx-2'>
                     <img
                       src={univImg}
@@ -146,17 +146,15 @@ export function About() {
                       className='w-20 rounded-full border-white border-3'
                     />
                   </div>
-                  <div className='flex flex-col mx-2'>
-                    <Typography variant='h3' className='font-normal'>
-                      Universitas Widyatama
-                    </Typography>
-                    <div className='flex flex-col w-full'>
-                      <section className='flex items-center text-lg gap-2 text-slate-500 mr-2 tracking-wide leading-relaxed'>
-                        college student{' '}
-                        <span className="mx-auto mt-1 block h-2 w-2 rounded-full bg-blue-gray-300 content-['']" />{' '}
-                        Computer Engineering
-                      </section>
-                    </div>
+                  <div className='flex flex-col mx-2 w-full justify-center sm:items-center lg:items-start'>
+                    <Typography className='text-xl font-bold'>Universitas Widyatama</Typography>
+
+                    <section className='flex sm:flex-col lg:flex-row items-center sm:justify-center text-lg lg:gap-2 text-slate-500 mr-2 tracking-wide leading-relaxed'>
+                      <span>college student </span>
+                      <span className="mx-auto lg:mt-1 sm:my-1 block h-2 w-2 rounded-full bg-blue-gray-300 content-['']" />{' '}
+                      <span> Computer Engineering</span>
+                    </section>
+
                     <span className='text-xs text-slate-500 mt-2'>2023 - 2027</span>
                   </div>
                 </div>

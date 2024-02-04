@@ -10,6 +10,7 @@ import redux from '@/assets/img/redux-toolkit.png'
 import styledComponent from '@/assets/img/styled-component-icon.png'
 import vite from '@/assets/img/vite_icon.png'
 import angular from '@/assets/img/angular.png'
+import nextjs from '@/assets/img/nextjs.png'
 
 export const skillData = [
   {
@@ -31,6 +32,11 @@ export const skillData = [
     value: 'typescript',
     label: 'Typescript',
     icon: typescript,
+  },
+  {
+    value: 'next-js',
+    label: 'Next JS',
+    icon: nextjs,
   },
   {
     value: 'angular',

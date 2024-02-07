@@ -1,9 +1,14 @@
 import React, {useState, useEffect} from 'react'
-import {Typography, Card, CardHeader, CardBody} from '@material-tailwind/react'
-import {projectsData} from '@/dataDummy'
+import {Typography, Card, CardHeader, CardBody, CardFooter, Tooltip} from '@material-tailwind/react'
+
 import PageLoader from '@/components/loader'
+import {projectsData} from '@/dataDummy'
+import {InformationCircleIcon, ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline'
+import {ColorTemplate} from '@/helper'
+import {useNavigate} from 'react-router-dom'
 
 export function Project() {
+  const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
   useEffect(() => {
     setLoading(true)
@@ -16,7 +21,7 @@ export function Project() {
         <PageLoader />
       ) : (
         <>
-          {projectsData.map((data, i) => {
+          {/* {projectsData.map((data, i) => {
             const {stack, tools} = data
             return (
               <Card
@@ -64,7 +69,64 @@ export function Project() {
                 </CardBody>
               </Card>
             )
-          })}
+          })} */}
+          <Card>
+            <CardHeader className='p-5'>
+              <Typography>Projects</Typography>
+            </CardHeader>
+            <CardBody className='flex flex-wrap items-center justify-center gap-5 w-full'>
+              {projectsData?.map((item, i) => {
+                const {stack} = item
+                return (
+                  <Card className='mt-3 lg:w-96 md:w-full h-64 relative bg-gray-100' key={i}>
+                    <CardBody className='flex flex-col'>
+                      <div className='flex items-center mb-3 justify-between'>
+                        <span className='text-xs text-center'>{item.since}</span>
+
+                        <Tooltip content='Detail'>
+                          <span className='cursor-pointer'>
+                            <InformationCircleIcon className='w-5 h-5' />
+                          </span>
+                        </Tooltip>
+                      </div>
+
+                      <Typography color='black' className='mb-1 text-lg font-body'>
+                        {item.title}
+                      </Typography>
+                      <Typography className='text-sm'>{item.info}</Typography>
+                      <div className='mt-4 w-ful flex flex-wrap gap-2'>
+                        <span className='text-xs text-center p-1 rounded-md border-2 border-blue-400'>
+                          {item.tag}
+                        </span>
+
+                        {stack.map((item, i) => (
+                          <span
+                            key={i}
+                            className='text-xs text-center p-1 rounded-md'
+                            style={{border: `2px solid ${ColorTemplate[i]}`}}
+                          >
+                            {item.name}
+                          </span>
+                        ))}
+                      </div>
+
+                      <div className='absolute bottom-5 right-6 flex'>
+                        {item.demo === true && (
+                          <div
+                            onClick={() => navigate('/project/sticky-notes')}
+                            className='flex items-center cursor-pointer justify-center gap-1 text-sm border-2 p-1 border-blue-gray-400 rounded-md'
+                          >
+                            Demo <ArrowTopRightOnSquareIcon className='w-4' />
+                          </div>
+                        )}
+                      </div>
+                    </CardBody>
+                  </Card>
+                )
+              })}
+            </CardBody>
+            <CardFooter></CardFooter>
+          </Card>
         </>
       )}
     </div>

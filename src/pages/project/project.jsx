@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import {Typography, Card, CardHeader, CardBody} from '@material-tailwind/react'
 import {projectsData} from '@/dataDummy'
 import PageLoader from '@/components/loader'
-import {Link} from 'react-router-dom'
 
 export function Project() {
   const [loading, setLoading] = useState(false)
@@ -66,9 +65,6 @@ export function Project() {
               </Card>
             )
           })}
-          <div>
-            <Link to='/project/sticky-notes'>Sticky-notes</Link>
-          </div>
         </>
       )}
     </div>

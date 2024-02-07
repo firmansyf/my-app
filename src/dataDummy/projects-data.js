@@ -2,6 +2,7 @@ import assetDataImg from '@/assets/img/assetdata_img.png'
 import NavaImg from '@/assets/img/nava_img.png'
 import smartPatrolImg from '@/assets/img/smartpatrol_img.png'
 import evolTrackImg from '@/assets/img/evoltrack_img.png'
+import stickyNote from '@/assets/img/sticky-note.png'
 
 export const projectsData = [
   {
@@ -54,6 +55,17 @@ export const projectsData = [
     route: '/dashboard/profile',
     stack: [{name: 'Next Js'}],
     tools: [{name: 'Github'}, {name: 'Postman'}],
+  },
+
+  {
+    img: stickyNote,
+    title: 'Sticky Notes',
+    info: 'Capture. Organize. Inspire.',
+    tag: 'frontend development',
+    description: 'Stick your thoughts, peel your ideas.',
+    route: '/project/sticky-notes',
+    stack: [{name: 'React JS'}],
+    tools: [{name: 'Github'}],
   },
 ]
 

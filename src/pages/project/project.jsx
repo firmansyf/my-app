@@ -12,6 +12,7 @@ export function Project() {
   const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
   const [showModal, setShowModal] = useState(false)
+  const [isID, setIsID] = useState()
 
   useEffect(() => {
     setLoading(true)
@@ -90,7 +91,13 @@ export function Project() {
                         <span className='text-xs text-center'>{item.since}</span>
 
                         <Tooltip content='Detail'>
-                          <span className='cursor-pointer' onClick={() => setShowModal(true)}>
+                          <span
+                            className='cursor-pointer'
+                            onClick={() => {
+                              setShowModal(true)
+                              setIsID(item.id)
+                            }}
+                          >
                             <InformationCircleIcon className='w-5 h-5' />
                           </span>
                         </Tooltip>
@@ -142,7 +149,7 @@ export function Project() {
         </>
       )}
 
-      <DetailProject setShowModal={setShowModal} showModal={showModal} />
+      <DetailProject setShowModal={setShowModal} showModal={showModal} id={isID} setID={setIsID} />
     </div>
   )
 }

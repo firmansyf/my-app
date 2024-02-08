@@ -5,6 +5,7 @@ import stickyNote from '@/assets/img/sticky-note.png'
 
 export const projectsData = [
   {
+    id: 1,
     img: assetDataImg,
     title: 'AssetData platform',
     company: 'AssetData.io',
@@ -25,6 +26,7 @@ export const projectsData = [
     demo: false,
   },
   {
+    id: 2,
     img: NavaImg,
     title: 'NAVA',
     company: 'PT. Cudo Communication',
@@ -41,6 +43,7 @@ export const projectsData = [
   },
 
   {
+    id: 3,
     img: smartPatrolImg,
     title: 'Smart Patrol',
     company: 'PT. Cudo Communication',
@@ -68,6 +71,7 @@ export const projectsData = [
   // },
 
   {
+    id: 4,
     img: stickyNote,
     title: 'Sticky Notes',
     company: '-',

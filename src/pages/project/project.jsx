@@ -6,10 +6,13 @@ import {projectsData} from '@/dataDummy'
 import {InformationCircleIcon, ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline'
 import {ColorTemplate} from '@/helper'
 import {useNavigate} from 'react-router-dom'
+import DetailProject from '@/components/detail-project/DetailProject'
 
 export function Project() {
   const navigate = useNavigate()
   const [loading, setLoading] = useState(false)
+  const [showModal, setShowModal] = useState(false)
+
   useEffect(() => {
     setLoading(true)
     setTimeout(() => setLoading(false), 1000)
@@ -78,22 +81,25 @@ export function Project() {
               {projectsData?.map((item, i) => {
                 const {stack} = item
                 return (
-                  <Card className='mt-3 lg:w-96 md:w-full h-64 relative bg-gray-100' key={i}>
+                  <Card
+                    className='mt-3 lg:w-96 md:w-full lg:h-64 md:h-64 sm:h-80 relative bg-gray-100'
+                    key={i}
+                  >
                     <CardBody className='flex flex-col'>
                       <div className='flex items-center mb-3 justify-between'>
                         <span className='text-xs text-center'>{item.since}</span>
 
                         <Tooltip content='Detail'>
-                          <span className='cursor-pointer'>
+                          <span className='cursor-pointer' onClick={() => setShowModal(true)}>
                             <InformationCircleIcon className='w-5 h-5' />
                           </span>
                         </Tooltip>
                       </div>
 
-                      <Typography color='black' className='mb-1 text-lg font-body'>
+                      <Typography color='black' className='mb-1 text-lg font-bold font-body'>
                         {item.title}
                       </Typography>
-                      <Typography className='text-sm'>{item.info}</Typography>
+                      <Typography className='text-sm tracking-wide'>{item.info}</Typography>
                       <div className='mt-4 w-ful flex flex-wrap gap-2'>
                         <span className='text-xs text-center p-1 rounded-md border-2 border-blue-400'>
                           {item.tag}
@@ -110,7 +116,7 @@ export function Project() {
                         ))}
                       </div>
 
-                      <div className='absolute bottom-5 right-6 flex'>
+                      <div className='absolute items-center bottom-5 right-4 justify-between w-[90%] flex flex-row-reverse'>
                         {item.demo === true && (
                           <div
                             onClick={() => navigate('/project/sticky-notes')}
@@ -118,6 +124,12 @@ export function Project() {
                           >
                             Demo <ArrowTopRightOnSquareIcon className='w-4' />
                           </div>
+                        )}
+
+                        {item.note && (
+                          <span className='text-[10px]'>
+                            Note : <i>{item.note}</i>
+                          </span>
                         )}
                       </div>
                     </CardBody>
@@ -129,6 +141,8 @@ export function Project() {
           </Card>
         </>
       )}
+
+      <DetailProject setShowModal={setShowModal} showModal={showModal} />
     </div>
   )
 }

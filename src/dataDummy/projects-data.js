@@ -79,6 +79,7 @@ export const projectsData = [
     stack: [{name: 'React JS'}, {name: 'Javascript'}],
     tools: [{name: 'Github'}],
     demo: true,
+    note: 'Do not use mobile devices',
   },
 ]
 

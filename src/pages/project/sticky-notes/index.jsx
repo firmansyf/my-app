@@ -55,7 +55,7 @@ export default function StickyNotes() {
     <main className='h-screen bg-amber-100 p-0 relative'>
       <Button
         onClick={addNote}
-        variant='outlined'
+        variant=''
         className='is-button flex gap-2 items-center bg-blue-gray-600 z-40 outline-none'
       >
         <PencilIcon className='w-4 text-yellow-500' />

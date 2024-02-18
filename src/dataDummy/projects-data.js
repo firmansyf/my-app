@@ -2,6 +2,7 @@ import assetDataImg from '@/assets/img/assetdata_img.png'
 import NavaImg from '@/assets/img/nava_img.png'
 import smartPatrolImg from '@/assets/img/smartpatrol_img.png'
 import stickyNote from '@/assets/img/sticky-note.png'
+import motherFood from '@/assets/img/mother-food.png'
 
 export const projectsData = [
   {
@@ -84,6 +85,22 @@ export const projectsData = [
     tools: [{name: 'Github'}],
     demo: true,
     note: 'Do not use mobile devices',
+  },
+
+  {
+    id: 5,
+    img: motherFood,
+    title: 'Mother Food',
+    company: '-',
+    // info: 'Unlimited Access, Guaranteed Security!',
+    info: 'Mother Food is an application for buying and ordering hygienic and original food',
+    tag: 'frontend development',
+    since: 'Feb 2024',
+    description: 'Mother Food: Bringing Hygienic and Original Food to Your Doorstep!',
+    route: '/dashboard/profile',
+    stack: [{name: 'React Typescript'}, {name: 'Javascript'}],
+    tools: [{name: 'Github'}],
+    demo: false,
   },
 ]
 

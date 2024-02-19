@@ -59,7 +59,13 @@ export function Profile() {
                 <div className='flex flex-1 gap-4 sm:flex-col lg:flex-row'>
                   <div className='w-full'>
                     <label>Domicile</label>
-                    <Input label='Bandung Barat, Jawa Barat 40558 Indonesia ' disabled />
+                    <p
+                      label=''
+                      className='w-auto break-word p-2 rounded-md text-gray-600 text-sm'
+                      style={{backgroundColor: '#ECEFF1'}}
+                    >
+                      Bandung Barat, Jawa Barat 40558 Indonesia
+                    </p>
                   </div>
                   <div className='w-full'>
                     <label>Phone Number / WhatsApp</label>

@@ -2,15 +2,15 @@ import {useMaterialTailwindController} from '@/context'
 import {Profile} from '@/pages'
 import routes from '@/routes'
 import {Configurator, DashboardNavbar, Footer, Sidenav} from '@/widgets/layout'
-import {PaperAirplaneIcon} from '@heroicons/react/24/solid'
 import {IconButton} from '@material-tailwind/react'
 import {Route, Routes} from 'react-router-dom'
+import {PhoneIcon} from '@heroicons/react/24/solid'
 
 export function Dashboard() {
   const [controller] = useMaterialTailwindController() // dispatch
   const {sidenavType} = controller
 
-  const toTelegram = (url) => {
+  const toWA = (url) => {
     window.open(url, '_blank')
   }
 
@@ -23,15 +23,17 @@ export function Dashboard() {
       <div className='p-4 xl:ml-80'>
         <DashboardNavbar />
         <Configurator />
+
         <IconButton
           size='lg'
-          color='light-blue'
+          color='green'
           className='fixed bottom-8 right-8 z-40 rounded-full shadow-blue-gray-900/10'
           ripple={false}
-          onClick={() => toTelegram('https://t.me/Firmanysf')}
+          onClick={() => toWA('https://wa.me/6285156948098')}
         >
-          <PaperAirplaneIcon className='h-5 w-5' />
+          <PhoneIcon className='h-5 w-5' />
         </IconButton>
+
         <Routes>
           {routes.map(
             ({layout, pages}) =>

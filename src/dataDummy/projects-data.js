@@ -3,6 +3,7 @@ import NavaImg from '@/assets/img/nava_img.png'
 import smartPatrolImg from '@/assets/img/smartpatrol_img.png'
 import stickyNote from '@/assets/img/sticky-note.png'
 import motherFood from '@/assets/img/mother-food.png'
+import todoApp from '@/assets/img/todo-app.png'
 
 export const projectsData = [
   {
@@ -11,11 +12,11 @@ export const projectsData = [
     title: 'AssetData platform',
     company: 'AssetData.io',
     info: 'AssetData.io is one of the fastest-growing SaaS asset management and maintenance platforms available.',
-    tag: 'frontend development',
+    tag: ['frontend development'],
     since: 'Sep 2021 - Dec 2023',
     description:
       'AssetData.io is one of the fastest-growing SaaS asset management and maintenance platforms available.',
-    route: '/dashboard/profile',
+    repository: '-',
     stack: [{name: 'React Typescript'}, {name: 'Cypress'}, {name: 'Javascript'}],
     tools: [
       {name: 'Slack'},
@@ -25,6 +26,7 @@ export const projectsData = [
       {name: 'Postman'},
     ],
     demo: false,
+    repo: false,
   },
   {
     id: 2,
@@ -33,14 +35,15 @@ export const projectsData = [
     company: 'PT. Cudo Communication',
     // info: 'NETWORK ASSETS VISUALIZATION & ANALYTICS',
     info: 'Uncover Opportunities, Optimize Efficiency, and Maximize Growth with Network Assets Visualization & Analytics.',
-    tag: 'frontend development',
+    tag: ['frontend development'],
     since: 'Sep 2023 - Jan 2024',
     description:
       'Uncover Opportunities, Optimize Efficiency, and Maximize Growth with Network Assets Visualization & Analytics.',
-    route: '/dashboard/profile',
+    repository: '-',
     stack: [{name: 'React Typescript'}, {name: 'Javascript'}],
     tools: [{name: 'Gitlab'}, {name: 'Trello'}, {name: 'Postman'}, {name: 'Figma'}],
     demo: false,
+    repo: false,
   },
 
   {
@@ -50,14 +53,15 @@ export const projectsData = [
     company: 'PT. Cudo Communication',
     // info: 'Unlimited Access, Guaranteed Security!',
     info: 'This app provides security guards with essential tools for attendance, reporting, and scheduling, along with background location tracking.',
-    tag: 'frontend development',
+    tag: ['frontend development'],
     since: 'Sep 2023 - Jan 2024',
     description:
       "This app provides security guards with essential tools for attendance, reporting, and scheduling, along with background location tracking. It's built offline-first to ensure constant access, even without an internet connection.",
-    route: '/dashboard/profile',
+    repository: '-',
     stack: [{name: 'Javascript'}, {name: 'Jquery'}],
     tools: [{name: 'Gitlab'}, {name: 'Trello'}, {name: 'Postman'}],
     demo: false,
+    repo: false,
   },
 
   // {
@@ -77,13 +81,14 @@ export const projectsData = [
     title: 'Sticky Notes',
     company: '-',
     info: 'The Sticky Notes project is an application that allows users to take notes, capture ideas, and organize their thoughts easily and quickly.',
-    tag: 'frontend development',
+    tag: ['frontend development'],
     since: 'Jan 2024',
     description: 'Stick your thoughts, peel your ideas.',
-    route: '/project/sticky-notes',
+    repository: '-',
     stack: [{name: 'React JS'}, {name: 'Javascript'}],
     tools: [{name: 'Github'}],
     demo: true,
+    repo: false,
     note: 'Do not use mobile devices',
   },
 
@@ -94,13 +99,31 @@ export const projectsData = [
     company: '-',
     // info: 'Unlimited Access, Guaranteed Security!',
     info: 'Mother Food is an application for buying and ordering hygienic and original food',
-    tag: 'frontend development',
+    tag: ['frontend development', 'landing-page'],
     since: 'Feb 2024',
     description: 'Mother Food: Bringing Hygienic and Original Food to Your Doorstep!',
-    route: '/dashboard/profile',
+    repository: 'https://github.com/firmansyf/landing-page-mother-food',
     stack: [{name: 'React Typescript'}, {name: 'Javascript'}],
     tools: [{name: 'Github'}],
     demo: false,
+    repo: true,
+  },
+
+  {
+    id: 6,
+    img: todoApp,
+    title: 'ToDo App',
+    company: '-',
+    // info: 'Unlimited Access, Guaranteed Security!',
+    info: 'Organize Your Life, One Task at a Time',
+    tag: ['frontend development'],
+    since: 'Feb 2024',
+    description: 'Mother Food: Bringing Hygienic and Original Food to Your Doorstep!',
+    repository: 'https://github.com/firmansyf/todo-app',
+    stack: [{name: 'React Typescript'}, {name: 'Javascript'}, {name: 'Cypress'}],
+    tools: [{name: 'Github'}, {name: 'Unit-testing'}],
+    demo: false,
+    repo: true,
   },
 ]
 

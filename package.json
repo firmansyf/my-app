@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://firmansyf.github.io/my-app/",
   "private": true,
   "version": "2.1.0",
   "type": "module",

@@ -14,7 +14,7 @@ export function About() {
 
   const onClick = () => {
     const urlResume =
-      'https://drive.google.com/file/d/1_Tgpuxn-pnGrc2Z6K7IyYL3j7qMp-JF8/view?usp=sharing'
+      'https://drive.google.com/file/d/171V3LCSZE_5hTvuxcM6IzzpDXkan0jtq/view?usp=sharing'
     window.open(urlResume, '_blank')
   }
 

@@ -1,8 +1,19 @@
 import cudo from '@/assets/img-office/cudo.jpg'
 import assetData from '@/assets/img-office/assetData.jpg'
 import emptyComp from '@/assets/img-office/empty-company.png'
+import serenade from '@/assets/img-office/serenade-story.jpg'
 
 export const experienceData = [
+  {
+    icon: serenade,
+    color: 'text-blue-gray-300',
+    title: 'Serenade Story',
+    position: 'Frontend Developer',
+    jenis_pekerjaaan: 'Full Time',
+    lokasi: 'Jarak Jauh',
+    kota: 'Jakarta Pusat, ID',
+    since: 'Feb 2024 - present',
+  },
   {
     icon: cudo,
     color: 'text-blue-gray-300',

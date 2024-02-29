@@ -147,7 +147,9 @@ export function About() {
                     />
                   </div>
                   <div className='flex flex-col mx-2 w-full justify-center sm:items-center lg:items-start'>
-                    <Typography className='text-xl font-bold'>Universitas Widyatama</Typography>
+                    <Typography className='text-xl font-bold text-center'>
+                      Universitas Widyatama
+                    </Typography>
 
                     <section className='flex sm:flex-col lg:flex-row items-center sm:justify-center text-lg lg:gap-2 text-slate-500 mr-2 tracking-wide leading-relaxed'>
                       <span>college student </span>

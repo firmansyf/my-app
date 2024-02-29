@@ -22,7 +22,7 @@ export function Profile() {
               <div className='flex items-center gap-4'>
                 <Avatar src={yusuf} size='xxl' className='border-2 border-blue-gray-100' />
                 <div className='flex flex-col w-full gap-2'>
-                  <div className='text-sm font-semibold'>Account Owner</div>
+                  <span className='text-sm font-semibold lg:w-full sm:w-4/5'>Account Owner</span>
                   <p className='lg:w-full sm:w-4/5 text-sm break-words'>
                     yusuffirmansyamh@gmail.com
                   </p>

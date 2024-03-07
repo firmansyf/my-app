@@ -107,7 +107,7 @@ export function Home() {
                   )
                 })}
               </CardBody>
-              <CardFooter className=''>
+              <CardFooter>
                 <Button
                   variant='text'
                   className='flex items-center gap-2'
@@ -146,8 +146,9 @@ export function Home() {
                 </Typography>
               </CardHeader>
               <CardBody className='pt-0 overflow-y-auto max-h-full'>
-                {experienceData?.map(
-                  ({icon, color, title, since, position, lokasi, jenis_pekerjaaan}, key) => (
+                {experienceData
+                  ?.slice(0, 4)
+                  ?.map(({icon, color, title, since, position, lokasi, jenis_pekerjaaan}, key) => (
                     <div key={title} className='flex items-start gap-4 py-3'>
                       <div
                         className={`relative p-1 after:absolute after:-bottom-6 after:left-2/4 after:w-0.5 after:-translate-x-2/4 after:bg-blue-gray-50 after:content-[''] ${
@@ -185,9 +186,31 @@ export function Home() {
                         </Typography>
                       </div>
                     </div>
-                  )
-                )}
+                  ))}
               </CardBody>
+              <CardFooter>
+                <Button
+                  variant='text'
+                  className='flex items-center gap-2'
+                  onClick={() => navigate('/dashboard/about')}
+                >
+                  See More{' '}
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    strokeWidth={2}
+                    stroke='currentColor'
+                    className='h-5 w-5'
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3'
+                    />
+                  </svg>
+                </Button>
+              </CardFooter>
             </Card>
           </div>
         </>

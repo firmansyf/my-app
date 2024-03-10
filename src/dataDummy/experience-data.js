@@ -9,7 +9,7 @@ export const experienceData = [
     color: 'text-blue-gray-300',
     title: 'Serenade Story',
     position: 'Frontend Developer',
-    jenis_pekerjaaan: 'Full Time',
+    jenis_pekerjaaan: 'Freelance',
     lokasi: 'Jarak Jauh',
     kota: 'Jakarta Pusat, ID',
     since: 'Feb 2024 - present',

@@ -26,12 +26,16 @@ export default function DetailProject({showModal, setShowModal, id, setID}) {
           <img src={detail.img} alt={detail?.title} className='w-full h-72 border-2 shadow-md' />
           <section className='flex flex-col gap-2'>
             <div className='w-full'>
-              <label>Description</label>
-              <p className='bg-gray-200 rounded-md  p-3'>{detail.description}</p>
+              <label className='font-semibold'>Company</label>
+              <p className='bg-gray-200 rounded-md  p-3'>{detail.company}</p>
             </div>
             <div className='w-full'>
-              <label>Title</label>
+              <label className='font-semibold'>Title</label>
               <p className='bg-gray-200 p-3 rounded-md'>{detail.title}</p>
+            </div>
+            <div className='w-full'>
+              <label className='font-semibold'>Description</label>
+              <p className='bg-gray-200 rounded-md  p-3'>{detail.description}</p>
             </div>
           </section>
         </DialogBody>

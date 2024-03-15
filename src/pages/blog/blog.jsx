@@ -39,14 +39,21 @@ export function Blog() {
                       />
 
                       <div className='mt-2 w-full'>
-                        <Typography variant='h5'>{item.title}</Typography>
-                        <p className='text-md tracking-wide w-full'>{item?.description}</p>
+                        <Typography
+                          variant='h5'
+                          className='lg:font-bold lg:text-xl sm:text-md sm:font-bold'
+                        >
+                          {item.title}
+                        </Typography>
+                        <p className='lg:text-md sm:text-sm tracking-wide w-full'>
+                          {item?.description}
+                        </p>
 
-                        <section className='flex gap-1 mt-2 items-center'>
+                        <section className='flex gap-1 mt-2 items-center sm:flex-wrap'>
                           {tag.map((dt, i) => (
                             <span
                               key={i}
-                              className='text-xs p-1 rounded-xl shadow-sm'
+                              className='lg:text-sm sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
                               style={{backgroundColor: '#EEE'}}
                             >
                               {dt}

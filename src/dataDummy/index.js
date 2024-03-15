@@ -1,5 +1,5 @@
 export * from '@/dataDummy/articles-data'
-export * from '@/dataDummy/statistics-charts-data'
+// export * from '@/dataDummy/statistics-charts-data'
 export * from '@/dataDummy/skill-data'
 export * from '@/dataDummy/experience-data'
 export * from '@/dataDummy/platform-settings-data'

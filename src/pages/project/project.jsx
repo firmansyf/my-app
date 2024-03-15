@@ -11,7 +11,11 @@ import {
 
 import PageLoader from '@/components/loader'
 import {projectsData} from '@/dataDummy'
-import {InformationCircleIcon, ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline'
+import {
+  InformationCircleIcon,
+  ArrowTopRightOnSquareIcon,
+  LinkIcon,
+} from '@heroicons/react/24/outline'
 import {ColorTemplate} from '@/helper'
 import {useNavigate} from 'react-router-dom'
 import DetailProject from '@/components/detail-project/DetailProject'
@@ -47,7 +51,7 @@ export function Project() {
                 const {stack} = item
                 return (
                   <Card
-                    className='mt-3 lg:w-96 md:w-full lg:h-64 md:h-64 sm:h-80 relative bg-gray-100'
+                    className='mt-3 lg:w-96 md:w-full lg:h-72 md:h-64 sm:h-80 relative bg-gray-100'
                     key={i}
                   >
                     <CardBody className='flex flex-col'>
@@ -114,6 +118,17 @@ export function Project() {
                               className='bg-gray-200'
                             >
                               <ArrowTopRightOnSquareIcon className='w-4 text-black' />
+                            </IconButton>
+                          </Tooltip>
+                        )}
+
+                        {item.link !== undefined && (
+                          <Tooltip content={item.company}>
+                            <IconButton
+                              onClick={() => window.open(item.link, '_blank')}
+                              className='bg-gray-200'
+                            >
+                              <LinkIcon className='w-4 text-black' />
                             </IconButton>
                           </Tooltip>
                         )}

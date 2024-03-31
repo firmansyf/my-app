@@ -12,6 +12,7 @@ function App() {
     AOS.init({
       debounceDelay: 200,
       delay: 150,
+      once: true,
     })
   }, [])
 

@@ -24,7 +24,7 @@ export function About() {
         <PageLoader />
       ) : (
         <Card className='p-3' data-aos='fade-up' data-aos-duration='700'>
-          <Typography variant='h5' className='m-4 font-normal leading-loose'>
+          <Typography variant='h5' className='m-4 font-normal md:leading-loose sm:leading-relaxed'>
             A short story of me, not important but seem better than nothing.
           </Typography>
           <CardBody className='p-4'>
@@ -107,7 +107,7 @@ export function About() {
                         />
                       </div>
                       <div className='w-full flex md:flex-1 flex-col mx-2 justify-center items-center'>
-                        <h2 className=''>{item.position}</h2>
+                        <h2 className='font-semibold'>{item.position}</h2>
                         <div className='flex flex-col w-full justify-center items-center'>
                           <div className=' flex flex-col w-full items-center justify-center'>
                             <span className='text-sm text-slate-500 text-center mr-2 tracking-wide leading-relaxed'>
@@ -115,11 +115,15 @@ export function About() {
                             </span>
                             <span className='text-sm text-slate-500'>{item.kota}</span>
                           </div>
-                          <span className='text-slate-400 text-sm tracking-wide leading-relaxed'>
+                          <span className='text-gray-500 text-xs tracking-wide leading-relaxed'>
                             {item.jenis_pekerjaaan}
                           </span>
                         </div>
-                        <span className='text-xs text-slate-500 mt-2'>{item.since}</span>
+                        {/* <div className='py-1 px-2 flex items-center bg-green-500 mt-2 rounded-full'> */}
+                        <span className='text-xs text-gray-500 mt-2 font-semibold'>
+                          {item.since}
+                        </span>
+                        {/* </div> */}
                       </div>
                     </div>
                   </div>
@@ -154,7 +158,7 @@ export function About() {
                     <section className='flex sm:flex-col lg:flex-row items-center sm:justify-center text-lg lg:gap-2 text-slate-500 mr-2 tracking-wide leading-relaxed'>
                       <span>college student </span>
                       <span className="mx-auto lg:mt-1 sm:my-1 block h-2 w-2 rounded-full bg-blue-gray-300 content-['']" />{' '}
-                      <span> Computer Engineering</span>
+                      <span> Informatics Engineering</span>
                     </section>
 
                     <span className='text-xs text-slate-500 mt-2'>2023 - 2027</span>

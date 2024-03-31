@@ -24,7 +24,7 @@ export function About() {
         <PageLoader />
       ) : (
         <Card className='p-3' data-aos='fade-up' data-aos-duration='700'>
-          <Typography variant='h5' className='m-4 font-normal leading-loose'>
+          <Typography variant='h5' className='m-4 font-normal md:leading-loose sm:leading-relaxed'>
             A short story of me, not important but seem better than nothing.
           </Typography>
           <CardBody className='p-4'>
@@ -154,7 +154,7 @@ export function About() {
                     <section className='flex sm:flex-col lg:flex-row items-center sm:justify-center text-lg lg:gap-2 text-slate-500 mr-2 tracking-wide leading-relaxed'>
                       <span>college student </span>
                       <span className="mx-auto lg:mt-1 sm:my-1 block h-2 w-2 rounded-full bg-blue-gray-300 content-['']" />{' '}
-                      <span> Computer Engineering</span>
+                      <span> Informatics Engineering</span>
                     </section>
 
                     <span className='text-xs text-slate-500 mt-2'>2023 - 2027</span>

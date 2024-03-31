@@ -6,7 +6,7 @@ export function Footer({routes}) {
 
   return (
     <footer className='py-5 mt-7'>
-      <div className='flex w-full flex-wrap items-center justify-center gap-6 px-2 md:justify-between'>
+      <div className='flex w-full flex-wrap items-center justify-center gap-6 px-2'>
         <Typography variant='small' className='font-normal text-inherit'>
           &copy; {year} Yusuf Firmansyah
         </Typography>
@@ -35,7 +35,7 @@ Footer.defaultProps = {
   brandLink: 'https://www.creative-tim.com',
   routes: [
     {name: 'Github', path: 'https://github.com/firmansyf'},
-    {name: 'Facebook', path: 'https://www.facebook.com'},
+    {name: 'Instagram', path: 'https://www.instagram.com/yusuf.firmansyah_/'},
     {name: 'Linkedin', path: 'https://www.linkedin.com/in/yusuf-firmansyah/'},
   ],
 }

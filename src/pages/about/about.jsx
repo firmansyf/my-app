@@ -156,9 +156,9 @@ export function About() {
                     </Typography>
 
                     <section className='flex sm:flex-col lg:flex-row items-center sm:justify-center text-lg lg:gap-2 text-slate-500 mr-2 tracking-wide leading-relaxed'>
-                      <span>college student </span>
+                      <span className='sm:text-sm md:text-md'>college student </span>
                       <span className="mx-auto lg:mt-1 sm:my-1 block h-2 w-2 rounded-full bg-blue-gray-300 content-['']" />{' '}
-                      <span> Informatics Engineering</span>
+                      <span className='sm:text-sm md:text-md'> Informatics Engineering</span>
                     </section>
 
                     <span className='text-xs text-slate-500 mt-2'>2023 - 2027</span>

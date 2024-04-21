@@ -19,13 +19,13 @@ export function Profile() {
         <Card className='mt-12 min-h-[65vh]'>
           <CardBody>
             <section className='flex flex-col'>
-              <div className='flex items-center gap-4'>
+              <div className='flex items-center w-full gap-4'>
                 <Avatar src={yusuf} size='xxl' className='border-2 border-blue-gray-100' />
                 <div className='flex flex-col w-full gap-2'>
                   <span className='text-sm font-semibold lg:w-full text-gray-500 sm:w-4/5'>
                     Account Owner
                   </span>
-                  <p className='lg:w-max sm:w-4/5 text-sm text-green-600 font-semibold break-words p-2 rounded-full bg-green-50'>
+                  <p className='lg:w-max sm:w-4/5 text-sm text-green-600 font-semibold break-words rounded-xl bg-green-50'>
                     yusuffirmansyamh@gmail.com
                   </p>
                 </div>

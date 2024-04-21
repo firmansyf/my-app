@@ -1,6 +1,13 @@
 import PageLoader from '@/components/loader'
-import {experienceData, articlesData} from '@/dataDummy'
-import {ArrowUpIcon, ClockIcon} from '@heroicons/react/24/outline'
+import {experienceData, articlesData, CardDashboardData} from '@/dataDummy'
+import {
+  ArrowUpIcon,
+  BriefcaseIcon,
+  CodeBracketIcon,
+  CodeBracketSquareIcon,
+  LinkIcon,
+  ClockIcon,
+} from '@heroicons/react/24/outline'
 import {Button, Card, CardBody, CardFooter, CardHeader, Typography} from '@material-tailwind/react'
 import React, {useState, useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
@@ -43,7 +50,36 @@ export function Home() {
           </div>
 
           <div
-            className='mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3'
+            className='w-full mb-10 grid gap-y-3 gap-x-6 md:grid-cols-4 xl:grid-cols-4'
+            data-aos='fade-up'
+            data-aos-duration='700'
+          >
+            {CardDashboardData.map((item, i) => (
+              <Card
+                className='flex-1 flex flex-col p-4 gap-2 sm:justify-center sm:items-center'
+                key={i}
+              >
+                <div className='flex items-center gap-2'>
+                  {item.title === 'experience' && <BriefcaseIcon className='w-6 opacity-60' />}
+
+                  {item.title === 'articles' && <LinkIcon className='w-6 opacity-60' />}
+
+                  {item.title === 'project' && <CodeBracketIcon className='w-6 opacity-60' />}
+
+                  {item.title === 'skill' && <CodeBracketSquareIcon className='w-6 opacity-60' />}
+
+                  <span className='text-md font-bold capitalize tracking-wide text-gray-500'>
+                    {item.title}
+                  </span>
+                </div>
+
+                <span className='text-3xl font-semibold'>{item.count}</span>
+              </Card>
+            ))}
+          </div>
+
+          <div
+            className='mb-4 grid grid-cols-1 gap-6 xl:grid-cols-3 '
             data-aos='fade-up'
             data-aos-duration='700'
           >
@@ -180,7 +216,7 @@ export function Home() {
                         <Typography
                           as='span'
                           variant='small'
-                          className='text-sm font-medium text-blue-gray-500'
+                          className='text-xs font-medium text-blue-gray-500'
                         >
                           {since}
                         </Typography>

@@ -120,7 +120,7 @@ export const projectsData = [
     info: 'Organize Your Life, One Task at a Time',
     tag: ['frontend development'],
     since: 'Feb 2024',
-    description: 'Mother Food: Bringing Hygienic and Original Food to Your Doorstep!',
+    description: 'Organize Your Life, One Task at a Time!',
     repository: 'https://github.com/firmansyf/todo-app',
     stack: [{name: 'React Typescript'}, {name: 'Javascript'}, {name: 'Cypress'}],
     tools: [{name: 'Github'}, {name: 'Unit-testing'}],

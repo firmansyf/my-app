@@ -22,8 +22,10 @@ export function Profile() {
               <div className='flex items-center gap-4'>
                 <Avatar src={yusuf} size='xxl' className='border-2 border-blue-gray-100' />
                 <div className='flex flex-col w-full gap-2'>
-                  <span className='text-sm font-semibold lg:w-full sm:w-4/5'>Account Owner</span>
-                  <p className='lg:w-full sm:w-4/5 text-sm break-words'>
+                  <span className='text-sm font-semibold lg:w-full text-gray-500 sm:w-4/5'>
+                    Account Owner
+                  </span>
+                  <p className='lg:w-max sm:w-4/5 text-sm text-green-600 font-semibold break-words p-2 rounded-full bg-green-50'>
                     yusuffirmansyamh@gmail.com
                   </p>
                 </div>
@@ -61,7 +63,7 @@ export function Profile() {
                     <label>Domicile</label>
                     <p
                       label=''
-                      className='w-auto break-word p-2 rounded-md text-gray-600 text-sm'
+                      className='w-auto break-word p-2 rounded-md text-blue-gray-500 text-sm'
                       style={{backgroundColor: '#ECEFF1'}}
                     >
                       Bandung Barat, Jawa Barat 40558 Indonesia

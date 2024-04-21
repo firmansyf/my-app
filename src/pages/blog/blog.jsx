@@ -43,7 +43,7 @@ export function Blog() {
                           variant='h5'
                           className='lg:font-bold lg:text-xl sm:text-md sm:font-bold'
                         >
-                          {item.title}
+                          {item.title}.
                         </Typography>
                         <p className='lg:text-md sm:text-sm tracking-wide w-full'>
                           {item?.description}
@@ -53,7 +53,7 @@ export function Blog() {
                           {tag.map((dt, i) => (
                             <span
                               key={i}
-                              className='lg:text-sm sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
+                              className='lg:text-xs sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
                               style={{backgroundColor: '#EEE'}}
                             >
                               {dt}

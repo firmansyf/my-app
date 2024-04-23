@@ -40,10 +40,10 @@ export function Sidenav({isName, routes}) {
 
         <IconButton
           variant='text'
-          color='white'
+          color={sidenavType === 'dark' ? 'white' : 'black'}
           size='sm'
           ripple={false}
-          className='absolute right-1 top-2 grid rounded-br-none rounded-tl-none xl:hidden'
+          className='absolute bg-white right-1 top-2 grid rounded-br-none rounded-tl-none xl:hidden'
           onClick={() => setOpenSidenav(dispatch, false)}
         >
           <XMarkIcon strokeWidth={2.5} className='h-5 w-5 text-black' />
@@ -79,7 +79,7 @@ export function Sidenav({isName, routes}) {
                     >
                       {icon}
                       <Typography
-                        color={isActive ? 'white' : 'black'}
+                        color={isActive ? 'white' : sidenavType === 'dark' ? 'white' : 'black'}
                         className='font-semibold text-sm capitalize'
                       >
                         {name}

@@ -22,8 +22,10 @@ export function DashboardNavbar() {
       //     : "px-0 py-1"
       // }`}
       // blurred={fixedNavbar}
-      color='white'
-      className='rounded-xl translate-all sticky top-4 z-40 py-3 shadow-md shadow-blue-gray-500/5'
+      // color={sidenavType === 'dark' ? '' : 'white'}
+      className={`${
+        sidenavType === 'dark' ? 'bg-black' : 'bg-white'
+      } rounded-xl translate-all sticky top-4 z-40 py-3 shadow-md`}
       fullWidth
       blurred={true}
     >
@@ -33,17 +35,21 @@ export function DashboardNavbar() {
             <Link to={`/${layout}`}>
               <Typography
                 variant='small'
-                color='blue-gray'
+                color={sidenavType === 'dark' ? 'white' : 'black'}
                 className='font-normal opacity-50 transition-all'
               >
                 {layout}
               </Typography>
             </Link>
-            <Typography variant='small' color='blue-gray' className='font-normal'>
+            <Typography
+              variant='small'
+              color={sidenavType === 'dark' ? 'white' : 'black'}
+              className={'font-normal'}
+            >
               {page}
             </Typography>
           </Breadcrumbs>
-          <Typography variant='h6' color='blue-gray'>
+          <Typography variant='h6' color={sidenavType === 'dark' ? 'white' : 'blue-gray'}>
             {page}
           </Typography>
         </div>

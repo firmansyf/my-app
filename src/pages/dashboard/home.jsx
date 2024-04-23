@@ -35,12 +35,17 @@ export function Home() {
             data-aos='fade-up'
             data-aos-duration='700'
           >
-            <Card className='shadow-sm border border-blue-gray-100'>
+            <Card className='shadow-sm border border-blue-gray-100 bg-green-500'>
               <CardBody className='lg:w-2/3 sm:w-full'>
                 <div className='mb-3'>
-                  <Typography variant='h4'>Hi, {"i'am Yusuf Firmansyah"}</Typography>
+                  <Typography variant='h4' className='text-white'>
+                    Hi, {"i'am Yusuf Firmansyah"}
+                  </Typography>
                 </div>
-                <Typography variant='paragraph' className='tracking-wide font-normal w-full'>
+                <Typography
+                  variant='paragraph'
+                  className='tracking-wide font-normal w-full text-white'
+                >
                   I am an experienced frontend developer with a focus on attractive and interactive
                   user interface pages. {"I'm"} dedicated to creating web applications that stand
                   out, are responsive, and are reliable.
@@ -124,13 +129,13 @@ export function Home() {
                               {tag.map((dt, i) => (
                                 <span
                                   key={i}
-                                  className='lg:text-sm sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
+                                  className='lg:text-xs sm:text-[10px] p-1 rounded-xl w-auto shadow-sm sm:text-center'
                                   style={{backgroundColor: '#EEE'}}
                                 >
                                   {dt}
                                 </span>
                               ))}
-                              <span className='text-sm p-1 rounded-xl flex items-center'>
+                              <span className='text-xs p-1 rounded-xl flex items-center'>
                                 <ClockIcon className='w-4 mx-1' />
                                 {item.duration}
                               </span>

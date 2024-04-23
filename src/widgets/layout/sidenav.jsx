@@ -78,7 +78,10 @@ export function Sidenav({isName, routes}) {
                       fullWidth
                     >
                       {icon}
-                      <Typography color='inherit' className='font-medium capitalize'>
+                      <Typography
+                        color={isActive ? 'white' : 'black'}
+                        className='font-semibold text-sm capitalize'
+                      >
                         {name}
                       </Typography>
                     </Button>

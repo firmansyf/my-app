@@ -1,15 +1,18 @@
 import {useLocation, Link} from 'react-router-dom'
 import {Navbar, Typography, IconButton, Breadcrumbs, Avatar} from '@material-tailwind/react'
 import {Bars3Icon} from '@heroicons/react/24/solid'
-import {useMaterialTailwindController, setOpenSidenav} from '@/context'
+import {useMaterialTailwindController, setOpenSidenav, setSidenavType} from '@/context'
+
 import yusuf from '@/assets/img-office/yusuf.jpg'
+import {SunIcon, MoonIcon} from '@heroicons/react/24/outline'
 
 export function DashboardNavbar() {
   const [controller, dispatch] = useMaterialTailwindController()
-  const {fixedNavbar, openSidenav} = controller
+  const {fixedNavbar, openSidenav, sidenavType} = controller
   const {pathname} = useLocation()
   const [layout, page] = pathname.split('/').filter((el) => el !== '')
 
+  console.log('sidenavType :', sidenavType)
   return (
     <Navbar
       // color={fixedNavbar ? "white" : "transparent"}
@@ -19,8 +22,10 @@ export function DashboardNavbar() {
       //     : "px-0 py-1"
       // }`}
       // blurred={fixedNavbar}
-      color='white'
-      className='rounded-xl translate-all sticky top-4 z-40 py-3 shadow-md shadow-blue-gray-500/5'
+      // color={sidenavType === 'dark' ? '' : 'white'}
+      className={`${
+        sidenavType === 'dark' ? 'bg-black' : 'bg-white'
+      } rounded-xl translate-all sticky top-4 z-40 py-3 shadow-md`}
       fullWidth
       blurred={true}
     >
@@ -30,17 +35,21 @@ export function DashboardNavbar() {
             <Link to={`/${layout}`}>
               <Typography
                 variant='small'
-                color='blue-gray'
+                color={sidenavType === 'dark' ? 'white' : 'black'}
                 className='font-normal opacity-50 transition-all'
               >
                 {layout}
               </Typography>
             </Link>
-            <Typography variant='small' color='blue-gray' className='font-normal'>
+            <Typography
+              variant='small'
+              color={sidenavType === 'dark' ? 'white' : 'black'}
+              className={'font-normal'}
+            >
               {page}
             </Typography>
           </Breadcrumbs>
-          <Typography variant='h6' color='blue-gray'>
+          <Typography variant='h6' color={sidenavType === 'dark' ? 'white' : 'blue-gray'}>
             {page}
           </Typography>
         </div>
@@ -136,6 +145,25 @@ export function DashboardNavbar() {
             </MenuList>
           </Menu> */}
           <div className='flex gap-2 items-center'>
+            <IconButton
+              variant='text'
+              color='blue-gray'
+              className='flex items-center'
+              onClick={() => {
+                if (sidenavType === 'white') {
+                  setSidenavType(dispatch, 'dark')
+                } else {
+                  setSidenavType(dispatch, 'white')
+                }
+              }}
+            >
+              {sidenavType === 'white' ? (
+                <SunIcon className='h-5 w-5 text-blue-gray-500' />
+              ) : (
+                <MoonIcon className='h-5 w-5 text-blue-gray-500' />
+              )}
+            </IconButton>
+
             <Link to='/dashboard/profile' className=''>
               <Avatar src={yusuf} size='sm' />
             </Link>

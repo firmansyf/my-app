@@ -1,5 +1,10 @@
 import {Home, Blog, Project, About} from '@/pages'
-import {CodeBracketIcon, HomeIcon, InformationCircleIcon, LinkIcon} from '@heroicons/react/24/solid'
+import {
+  CodeBracketIcon,
+  Squares2X2Icon,
+  InformationCircleIcon,
+  LinkIcon,
+} from '@heroicons/react/24/solid'
 
 const icon = {
   className: 'w-5 h-5 text-inherit',
@@ -10,7 +15,7 @@ export const routes = [
     layout: 'dashboard',
     pages: [
       {
-        icon: <HomeIcon {...icon} />,
+        icon: <Squares2X2Icon {...icon} />,
         name: 'dashboard',
         path: '/home',
         element: <Home />,

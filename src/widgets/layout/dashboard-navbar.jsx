@@ -1,10 +1,10 @@
 import {useLocation, Link} from 'react-router-dom'
 import {Navbar, Typography, IconButton, Breadcrumbs, Avatar} from '@material-tailwind/react'
 import {Bars3Icon} from '@heroicons/react/24/solid'
-import {useMaterialTailwindController, setOpenSidenav, setSidenavType} from '@/context'
+import {useMaterialTailwindController, setOpenSidenav} from '@/context' // setSidenavType
 
 import yusuf from '@/assets/img-office/yusuf.jpg'
-import {SunIcon, MoonIcon} from '@heroicons/react/24/outline'
+// import {SunIcon, MoonIcon} from '@heroicons/react/24/outline'
 
 export function DashboardNavbar() {
   const [controller, dispatch] = useMaterialTailwindController()
@@ -12,7 +12,6 @@ export function DashboardNavbar() {
   const {pathname} = useLocation()
   const [layout, page] = pathname.split('/').filter((el) => el !== '')
 
-  console.log('sidenavType :', sidenavType)
   return (
     <Navbar
       // color={fixedNavbar ? "white" : "transparent"}
@@ -145,7 +144,7 @@ export function DashboardNavbar() {
             </MenuList>
           </Menu> */}
           <div className='flex gap-2 items-center'>
-            <IconButton
+            {/* <IconButton
               variant='text'
               color='blue-gray'
               className='flex items-center'
@@ -162,7 +161,7 @@ export function DashboardNavbar() {
               ) : (
                 <MoonIcon className='h-5 w-5 text-blue-gray-500' />
               )}
-            </IconButton>
+            </IconButton> */}
 
             <Link to='/dashboard/profile' className=''>
               <Avatar src={yusuf} size='sm' />

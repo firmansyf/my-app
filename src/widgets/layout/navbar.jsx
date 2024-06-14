@@ -1,13 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {Link} from 'react-router-dom'
-import {
-  Navbar as MTNavbar,
-  Collapse,
-  Typography,
-  Button,
-  IconButton,
-} from '@material-tailwind/react'
+import {Navbar as MTNavbar, Collapse, Typography, IconButton} from '@material-tailwind/react'
 import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline'
 
 export function Navbar({brandName, routes, action}) {
@@ -68,21 +62,6 @@ export function Navbar({brandName, routes, action}) {
       </Collapse>
     </MTNavbar>
   )
-}
-
-Navbar.defaultProps = {
-  brandName: 'Material Tailwind React',
-  action: (
-    <a
-      href='https://www.creative-tim.com/product/material-tailwind-dashboard-react'
-      target='_blank'
-      rel='noreferrer'
-    >
-      <Button variant='gradient' size='sm' fullWidth>
-        free download
-      </Button>
-    </a>
-  ),
 }
 
 Navbar.propTypes = {
